@@ -14,3 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+@font-face {
+  font-family: noir-regular;
+  src: url(../src/assets/fonts/NoirPro-Regular.otf);
+}
+
+@font-face {
+  font-family: noir-medium;
+  src: url(../src/assets/fonts/NoirPro-Medium.otf);
+}
+
+@font-face {
+  font-family: noir-bold;
+  src: url(../src/assets/fonts/NoirPro-Bold.otf);
+}
+
+@font-face {
+  font-family: noir-light;
+  src: url(../src/assets/fonts/NoirPro-Light.otf);
+}

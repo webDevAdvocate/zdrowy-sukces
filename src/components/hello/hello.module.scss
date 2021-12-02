@@ -1,0 +1,118 @@
+@import "../../../styles/globalVars.scss";
+
+.parallel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 400px;
+   
+    z-index: 1;
+    @include background-opacity($primaryPink, 0.7);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("../../assets/images/parallel_bg.png");
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2rem 3rem;
+       
+
+        .textBlock {
+            display: flex;
+            align-items: center;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+    
+            .text {
+                color: white;
+    
+                h1 {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+    
+                h1, h3, h5 {
+                    font-family: noir-light;
+                }
+    
+                h3, h5 {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        
+        .photoBlock {
+            .photo {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .parallel {
+        &::before {
+            background-size: contain;
+        }
+
+        .section {
+            width: 100%;
+            flex-direction: row;
+            padding: 2rem 5rem;
+
+            .textBlock {
+                display: flex;
+                align-items: center;
+                flex-grow: 1;
+                max-width: none;
+         
+    
+                .text {
+                    max-width: 30vw;
+    
+                    h1 {
+                        font-size: 2.5rem;
+                        text-align: left;
+                    }
+        
+                    h3 {
+                        font-size: 1.2rem;
+                    }
+        
+                    h5 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .parallel {
+
+        .section {
+            max-width: 1366px;
+        }
+        
+    }
+}
