@@ -13,25 +13,51 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: noir-light;
 }
 
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+hr {
+  background-color:#cb6b7f;
+  height: 2px;
+  border: none;
+}
 
 @font-face {
   font-family: noir-regular;
   src: url(../src/assets/fonts/NoirPro-Regular.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: noir-medium;
   src: url(../src/assets/fonts/NoirPro-Medium.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: noir-bold;
   src: url(../src/assets/fonts/NoirPro-Bold.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: noir-light;
   src: url(../src/assets/fonts/NoirPro-Light.otf);
+  font-display: swap;
 }

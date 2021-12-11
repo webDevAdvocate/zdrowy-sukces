@@ -1,0 +1,85 @@
+@import "../../../styles/globalVars.scss";
+
+.section {
+    @include background-opacity($primaryPink, 0.2);
+    min-height: 400px;
+    flex: 1;
+
+    .content {
+        margin: auto;
+
+        h4 {
+            color: $primaryPink;
+            line-height: 40px;
+            margin: 30px auto 0 auto;
+            
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            
+            margin: auto;
+    
+            .input, .textarea {
+                margin: 10px 0;
+                border: none;
+                padding: 10px;
+                resize: none;
+    
+                &:focus-visible {
+                    outline: $pinkSecondary auto 1px;
+                }
+                
+    
+                &::placeholder {
+                    color: lightgray;
+                    font-weight: 700;
+                }
+            }
+    
+            .input {
+                height: 40px;
+            }
+    
+            .button {
+                margin: 10px 0;
+                width: 100%;
+                border: none;
+                background: $primaryPink;
+                line-height: 40px;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        .content {
+            max-width: 300px;
+            margin: auto;
+
+            h4 {
+                display: flex;
+            }
+
+            .form {
+                .input, .textarea {
+                    margin: 10px 0;
+                }
+    
+                .button {
+                    margin-top: 10px;
+                    width: 100px;
+                    align-self: flex-end;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
