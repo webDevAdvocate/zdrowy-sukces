@@ -54,6 +54,26 @@
             justify-content: space-evenly;
             flex-direction: row;
             .post {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .instagram {
+
+        .header {
+            h4 {
+                font-size: 20px;
+            }
+        }
+       
+        .posts {
+            justify-content: space-evenly;
+            flex-direction: row;
+            .post {
                 width: 200px;
                 height: 200px;
             }

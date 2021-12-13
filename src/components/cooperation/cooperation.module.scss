@@ -1,0 +1,117 @@
+@import '../../../styles/globalVars.scss';
+
+.cooperation {
+    background-color: white;
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    position: static;
+    flex-direction: column;
+    min-height: 400px;
+
+    .headline {
+        width: auto;
+        margin-bottom: 30px;
+        
+        .wrapper {
+            display: flex;
+            align-items: center;
+
+            .text {
+                font-size: 1.5rem;
+                font-family: noir-light;
+                margin: 0;
+            }
+
+            .img-wrapper {
+                width: 70px;
+                height: 70px;
+                margin: 0 20px;
+            }
+        }
+
+        hr {
+            width: 50px;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+
+    .content {
+        width: auto;
+
+        .list {
+            list-style: none;
+            padding: 0;
+
+            .item::before {
+                content: "●";
+                color: $primaryPink;
+                font-weight: bold;
+                display: inline-block;
+                width: 1rem;
+                margin-left: -1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .cooperation {
+        flex-direction: row;
+        position: relative;
+
+        .headline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+
+            .wrapper {
+                max-width: 400px;
+
+                .text {
+                    font-size: 2.5rem;
+                }
+
+                .img-wrapper {
+                    position: absolute;
+                    top: -65px;
+                    left: calc(50% - 65px);
+                    width: 130px;
+                    height: 130px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            max-width: 400px;
+            margin: auto;
+
+            .list {
+                margin-left: 3rem;
+
+                .item {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .cooperation {
+       
+    }
+}
+
+@media (min-width: 1280px) {
+    .cooperation {
+        
+    }
+}
