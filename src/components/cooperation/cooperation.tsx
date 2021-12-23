@@ -15,9 +15,7 @@ export const Cooperation = () => {
                 <div className={styles['img-wrapper']}>
                     <Image layout="responsive" className={styles.img} src={img} />
                 </div>
-               
             </div>
-           
         </div>
         <div className={styles.content}>
             <ul className={styles.list}>

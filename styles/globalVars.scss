@@ -1,6 +1,7 @@
 
 $primaryPink: #cb6b7f;
 $pinkSecondary: #dc98a4;
+$grey: #dddedf;
 
 @mixin background-opacity($color, $opacity: 0.3) {
     background-color: $color; /* The Fallback */

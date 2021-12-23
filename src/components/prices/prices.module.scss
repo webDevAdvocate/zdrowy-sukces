@@ -1,0 +1,133 @@
+@import "../../../styles/globalVars.scss";
+
+.prices {
+    background-color: $primaryPink;
+
+    .wrapper {
+        position: relative;
+    }
+    
+    .fork {
+        position: absolute;
+        top: -50px;
+        width: 100px;
+        height: 100px;
+        right: 50px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: white;
+        padding: 2rem 0 0 2.5rem;
+    }
+
+    hr {
+        width: 75px;
+        background-color: white;
+        margin-left: 2.5rem;
+    }
+
+    .line1, .line2, .line3 {
+        display: none;
+    }
+
+    .prices-box {
+        position: static;
+
+        .box {
+            background-color: $grey;
+            width: 100%;
+            height: 450px;
+            margin: 25px 0;
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .prices {
+        height: 1750px;
+
+        .wrapper {
+            .fork {
+                position: absolute;
+                top: -75px;
+                width: 150px;
+                height: 150px;
+                right: 200px;
+            }
+    
+            h1 {
+                font-size: 2.5rem;
+                padding: 2rem 0 0 5rem;
+            }
+    
+            hr {
+                margin-left: 5rem;
+            }
+    
+            .line1, .line2, .line3 {
+                display: block;
+                position: absolute;
+                width: 100%;
+                z-index: -1;
+            }
+    
+    
+            .line1 {
+                top:0;
+                background-color: $primaryPink;
+                height: 300px;
+            }
+    
+            .line2 {
+                top: 300px;
+                background-color: white;
+                height: 450px;
+            }
+        
+            .line3 {
+                top: 750px;
+                background-color: $primaryPink;
+                height: 1000px;
+            }
+    
+            .prices-box {
+                position: absolute;
+                top: 150px;
+                grid-template-columns: 350px 350px;
+                width: 100%;
+                display: grid;
+                row-gap: 50px;
+                column-gap: 50px;
+                justify-content: center;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1280px) { 
+    .prices {
+        height: 1250px;
+
+        .wrapper {
+            .line1 {
+                height: 300px;
+            }
+        
+            .line2 {
+                top: 300px;
+                height: 250px;
+            }
+        
+            .line3 {
+                top: 550px;
+                height: 700px;
+            }
+    
+            .prices-box {
+                grid-template-columns: 350px 350px 350px;
+            }
+        }
+    }
+}

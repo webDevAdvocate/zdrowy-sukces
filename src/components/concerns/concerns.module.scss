@@ -1,0 +1,95 @@
+@import '../../../styles/globalVars.scss';
+
+.concerns {
+    padding: 2rem 2.5rem;
+
+    h1 {
+        font-size: 1.5rem;
+        color: $primaryPink;
+        margin-left: auto;
+        margin-right: auto;
+    };
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+
+        .box {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 30px;
+            color: $primaryPink;
+
+            h3 {
+                margin: 0;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            .wage {
+                width: 100px;
+                height: 100px;
+            }
+
+            &.center {
+                justify-content: flex-start;
+                align-items: flex-end;
+                padding: 0 30px;
+            }
+
+            &.color {
+                background-color: $primaryPink;
+                color: white;
+            } 
+        }
+    }
+
+    hr {
+        width: 150px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .concerns {
+        display: flex;
+        background-color: white;
+        min-height: 400px;
+        padding: 4rem 5rem;
+        flex-direction: column;
+
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+        
+        .boxes {
+            flex-direction: row;
+
+            .box {
+                h3 {
+                    font-size: 1rem;
+                }
+
+                .wage {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                &.center {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        hr {
+            width: 500px;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+    }
+}
