@@ -12,7 +12,7 @@ import { Prices } from '../src/components/prices/prices'
 
 import styles from '../styles/Home.module.css'
 
-const Home: NextPage<{posts: Posts}> = ({posts}) => {
+const Home: NextPage<{ posts: Posts }> = ({ posts }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -21,7 +21,7 @@ const Home: NextPage<{posts: Posts}> = ({posts}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hello />
-      <ContactSection posts={posts}/>
+      <ContactSection posts={posts} />
       <Cooperation />
       <About />
       <Concerns />
