@@ -37,15 +37,38 @@
         .box {
             background-color: $grey;
             width: 100%;
-            height: 450px;
+            height: 500px;
             margin: 25px 0;
+            padding: 5px;
+            color: $primaryPink;
+
+            .title {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            .price {
+                font-size: 2rem;
+                text-align: center;
+                font-family: noir-bold;
+            }
+
+            .description {
+                margin: 0;
+                padding-top: 20px;
+                padding-right: 20px;
+
+                .description-item-bullet {
+                    margin-left: 20px;
+                }
+            }
         }
     }
 }
 
 @media (min-width: 768px) { 
     .prices {
-        height: 1750px;
+        height: 1900px;
 
         .wrapper {
             .fork {
@@ -82,13 +105,14 @@
             .line2 {
                 top: 300px;
                 background-color: white;
-                height: 450px;
+                height: 650px;
+                z-index: 0;
             }
         
             .line3 {
-                top: 750px;
+                top: 950px;
                 background-color: $primaryPink;
-                height: 1000px;
+                height: 800px;
             }
     
             .prices-box {
@@ -108,7 +132,7 @@
 
 @media (min-width: 1280px) { 
     .prices {
-        height: 1250px;
+        height: 1350px;
 
         .wrapper {
             .line1 {
@@ -117,11 +141,11 @@
         
             .line2 {
                 top: 300px;
-                height: 250px;
+                height: 350px;
             }
         
             .line3 {
-                top: 550px;
+                top: 650px;
                 height: 700px;
             }
     
