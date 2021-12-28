@@ -33,6 +33,7 @@
         align-items: center;
         flex-direction: column;
         .post {
+            overflow: hidden;
             margin: 20px 0;
             width: 250px;
             height: 250px;
@@ -40,8 +41,9 @@
             position: relative;
 
             .image {
-                overflow: hidden;
                 transition: transform 0.5s ease;
+                width: 250px;
+                height: 250px;
 
                 &:hover {
                     transform: scale(1.2);
@@ -76,6 +78,11 @@
             .post {
                 width: 150px;
                 height: 150px;
+
+                .image {
+                    width: 150px;
+                    height: 150px;
+                }
             }
         }
     }
@@ -96,6 +103,11 @@
             .post {
                 width: 200px;
                 height: 200px;
+
+                .image {
+                    width: 200px;
+                    height: 200px;
+                }
             }
         }
     }

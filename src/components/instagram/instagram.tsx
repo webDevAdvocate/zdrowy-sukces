@@ -42,7 +42,7 @@ export const Instagram = ({ posts }: { posts: Posts }) => {
 const Post = ({ post }: { post: Post }) => {
     return (
         <a target="_blank" href={post.url} className={styles.post}>
-            <Image className={styles.image} width={250} height={250} src={post.image || "#"} />
+            <img className={styles.image} src={post.image || "#"} />
             <span className={styles.title}>{post.title}</span>
         </a>
     )
