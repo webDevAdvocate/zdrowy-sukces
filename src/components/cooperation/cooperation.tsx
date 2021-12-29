@@ -5,7 +5,7 @@ import img from '../../assets/images/wspolpraca.png';
 
 
 export const Cooperation = () => {
-    return <section className={styles.cooperation}>
+    return <section id="wspolpraca" className={styles.cooperation}>
         <div className={styles.headline}>
             <div className={styles.wrapper}>
                 <div>

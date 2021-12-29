@@ -2,6 +2,9 @@
 
 .certificates {
     min-height: 400px;
+    overflow: visible;
+    width: 100vw;
+    z-index: 1;
 
     h1 {
         font-size: 1.5rem;
@@ -14,7 +17,33 @@
         background-color: $primaryPink;
         margin-left: 2.5rem;
     }
+  
+    .container {
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+        padding: 20px 0;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+
+        &::-webkit-scrollbar {
+        display: none;
+        }
+    }
+
+    .card {
+        cursor: pointer;
+        flex-shrink: 0;
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+        margin-left: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }
+
 
 @media (min-width: 768px) { 
     .certificates {

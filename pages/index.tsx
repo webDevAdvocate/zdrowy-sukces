@@ -9,6 +9,7 @@ import { Footer } from '../src/components/footer/footer'
 import { Hello } from '../src/components/hello/hello'
 import { Posts } from '../src/components/instagram/instagram'
 import { Prices } from '../src/components/prices/prices'
+import { Header } from '../src/components/header/header';
 
 import styles from '../styles/Home.module.css'
 
@@ -20,6 +21,7 @@ const Home: NextPage<{ posts: Posts }> = ({ posts }) => {
         <meta name="description" content="Zdrowy sukces" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <Hello />
       <ContactSection posts={posts} />
       <Cooperation />

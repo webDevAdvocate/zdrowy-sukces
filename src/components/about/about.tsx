@@ -6,7 +6,7 @@ import heart from '../../assets/images/serce.png';
 
 
 export const About = () => {
-    return <section className={styles.about}>
+    return <section id="o-mnie" className={styles.about}>
         <div className={styles['heart-desktop']}>
             <Image layout="responsive" src={heart} />
         </div>

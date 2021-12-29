@@ -2,6 +2,7 @@
 
 .prices {
     background-color: $primaryPink;
+    display: flex;
 
     .wrapper {
         position: relative;
@@ -37,7 +38,7 @@
         .box {
             background-color: $grey;
             width: 100%;
-            height: 500px;
+            height: 450px;
             margin: 25px 0;
             padding: 5px;
             color: $primaryPink;
@@ -51,6 +52,20 @@
                 font-size: 2rem;
                 text-align: center;
                 font-family: noir-bold;
+            }
+
+            .savings {
+                font-size: 1rem;
+                text-align: center;
+                font-family: noir-regular;
+            }
+
+            hr {
+                background-color: $primaryPink;
+                width: 50px;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .description {
@@ -69,6 +84,7 @@
 @media (min-width: 768px) { 
     .prices {
         height: 1900px;
+        display: block;
 
         .wrapper {
             .fork {
