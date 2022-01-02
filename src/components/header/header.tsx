@@ -19,22 +19,21 @@ export const Header = () => {
   const menuButtonRef = useRef<HTMLInputElement | null>(null);
   const position = useScrollPosition();
   const router = useRouter();
-  console.log(position);
 
   const headerClasses = classNames(classes.header, {
     [classes.shrink]: shouldShrink,
   });
 
   useEffect(() => {
-    const shrink = position.y > 100 || router.pathname !== "/" || menuOpened;
+    const shrink = position.y > 100 || menuOpened;
 
     if (shrink != shouldShrink) {
+      console.log('set', shrink);
       setShouldShrink(prev => !prev);
     }
 
   }, [position])
 
-  console.log(shouldShrink, headerClasses)
   const facebookClasses = classNames(classes.link, classes.facebook);
   const instagramClasses = classNames(classes.link, classes.instagram);
 

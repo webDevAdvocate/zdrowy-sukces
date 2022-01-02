@@ -1,10 +1,10 @@
 import { Form } from '../form/form';
-import { Instagram, Posts } from '../instagram/instagram';
+import { Instagram } from '../instagram/instagram';
 import styles from './contactSection.module.scss';
 
-export const ContactSection = ({ posts }: { posts: Posts }) => {
+export const ContactSection = () => {
     return <div className={styles['contact-section']}>
-        <Instagram posts={posts} />
+        <Instagram />
         <Form />
     </div>
 }

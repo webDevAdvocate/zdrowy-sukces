@@ -9,6 +9,6 @@ export const Footer = () => {
         <div className={styles.logo}>
             <Image layout="responsive" src={logo} />
         </div>
-        <div className={styles.text}>Zdrowy Sukces | Patrycja Marszalec</div>
+        <div className={styles.text}>Zdrowy Sukces | mgr Patrycja Marszalec</div>
     </footer>
 }

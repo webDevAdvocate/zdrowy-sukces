@@ -1,0 +1,26 @@
+@import "../../../styles/globalVars.scss";
+
+.section {
+    cursor: pointer;
+    position: relative;
+
+    .image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 20px;
+        left: calc(50% - 75px);
+        right: calc(50% - 75px);
+        width: 150px;
+        line-height: 35px;
+        color: white;
+        background-color: $primaryPink;
+        border: none;
+        border-radius: 5px;
+    }
+}
+

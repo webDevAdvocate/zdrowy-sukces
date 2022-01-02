@@ -1,0 +1,25 @@
+@import "../../../styles/globalVars.scss";
+
+.section {
+    padding: 200px 30px;
+    background-color: $pinkSecondary;
+    color: white;
+
+    .content {
+        display: flex;
+
+        .gallery {
+            flex: 1;
+
+            .image {
+                width: 350px;
+                height: auto;
+            }
+        }
+
+        .info {
+            flex: 1;
+            padding: 0 20px;
+        }
+    }
+}

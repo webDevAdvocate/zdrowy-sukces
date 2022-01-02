@@ -41,7 +41,7 @@ export const Concerns = () => {
                     <h3>Nadciśnienie</h3>
                     <h3>Miażdżyca</h3>
                     <h3>Dolegliwości żołądkowe</h3>
-                    <h3>Migrena</h3>
+                    <h3>Migreny</h3>
                     <h3>Inne</h3>
                 </div>
             </div>

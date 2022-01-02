@@ -7,13 +7,13 @@ import { ContactSection } from '../src/components/contactSection/contactSection'
 import { Cooperation } from '../src/components/cooperation/cooperation'
 import { Footer } from '../src/components/footer/footer'
 import { Hello } from '../src/components/hello/hello'
-import { Posts } from '../src/components/instagram/instagram'
 import { Prices } from '../src/components/prices/prices'
 import { Header } from '../src/components/header/header';
+import { EffectiveDietSection } from '../src/components/effectiveDietSection/effectiveDietSection'
 
 import styles from '../styles/Home.module.css'
 
-const Home: NextPage<{ posts: Posts }> = ({ posts }) => {
+const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -23,7 +23,8 @@ const Home: NextPage<{ posts: Posts }> = ({ posts }) => {
       </Head>
       <Header />
       <Hello />
-      <ContactSection posts={posts} />
+      <EffectiveDietSection />
+      <ContactSection />
       <Cooperation />
       <About />
       <Concerns />
@@ -35,16 +36,3 @@ const Home: NextPage<{ posts: Posts }> = ({ posts }) => {
 }
 
 export default Home
-
-
-export async function getStaticProps() {
-  return {
-    props: {
-      posts: [
-        { image: process.env.INSTAGRAM_FIRST_POST_IMAGE, title: process.env.INSTAGRAM_FIRST_POST_TITLE, url: process.env.INSTAGRAM_FIRST_POST_URL },
-        { image: process.env.INSTAGRAM_SECOND_POST_IMAGE, title: process.env.INSTAGRAM_SECOND_POST_TITLE, url: process.env.INSTAGRAM_SECOND_POST_URL }
-      ]
-    },
-    revalidate: 60
-  }
-}
