@@ -1,18 +1,45 @@
 @import "../../../styles/globalVars.scss";
 
 .section {
-    padding: 200px 30px;
-    background-color: $pinkSecondary;
-    color: white;
+    padding: 100px 0;
+    background-color: white;
+    color: $primaryPink;
+    max-width: 1366px;
+    margin: auto;
+    text-align: justify;
+
+    strong {
+        font-family: noir-regular;
+    }
+
+    ul {
+        padding-left: 20px;
+
+        li {
+            margin-top: 5px;
+        }
+    }
 
     .content {
         display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            text-align: left;
+        }
+
+        h3 {
+            margin-top: 10px;
+            text-align: left;
+        }
 
         .gallery {
-            flex: 1;
 
             .image {
-                width: 350px;
+                width: 100%;
                 height: auto;
             }
         }
@@ -20,6 +47,71 @@
         .info {
             flex: 1;
             padding: 0 20px;
+            font-size: 1.2rem;
+            margin-top: 50px;
+        }
+
+        .buy {
+            margin-top: 50px;
+
+            .input {
+                margin: 10px 0;
+
+                input {
+                    margin-right: 10px;
+                }
+            }
+
+            button {
+                width: 150px;
+                border: none;
+                line-height: 30px;
+                background-color: $primaryPink;
+                margin: 20px;
+                border-radius: 3px;
+                color: white;
+            }
+
         }
     }
+
+    .description {
+        padding: 0 20px;
+
+        .descriptionItem {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: 200px 30px;
+        flex-direction: row;
+
+        ul {
+            padding-left: initial;
+        }
+
+        .content {
+            flex-direction: row;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            .info {
+                padding: 0 50px;
+                margin-top: 0;
+            }
+
+            .gallery {
+
+                .image {
+                    width: 350px;
+                }
+            }
+        }
+    } 
 }

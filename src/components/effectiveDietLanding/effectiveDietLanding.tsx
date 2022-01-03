@@ -81,11 +81,13 @@ export const EffectiveDietLanding = () => {
                 )}
             </div>
             <div className={styles.info}>
+                <h2>E-book Skuteczna Dieta </h2>
+                <h3>99,00 zł</h3>
                 Masz do wyboru 4 wersje ebooka: Ebook 1600 kcal i 1800 kcal z dietą klasyczną, ebook 1600 kcal i
                 1800 kcal z dietą przeciwzapalną. Posiłki w każdej wersji możesz wymieniać pomiędzy sobą dowolnie.
                 <br />
                 <br />
-                Dietę klasyczną wybierz, jeśli:
+                <strong>Dietę klasyczną wybierz, jeśli:</strong>
                 <ul>
                     <li>jesteś zdrowa</li>
                     <li>masz niedoczynność tarczycy lub inne lekkie schorzenie</li>
@@ -94,7 +96,7 @@ export const EffectiveDietLanding = () => {
                     <li>chcesz lepiej się odżywiać</li>
                     <li>ciągle jesteś na diecie i nie widzisz efektów</li>
                 </ul>
-                Dietę przeciwzapalną wybierz, jeśli masz:
+                <strong>Dietę przeciwzapalną wybierz, jeśli masz:</strong>
                 <ul>
                     <li>PCOS</li>
                     <li>Insulinooporność</li>
@@ -107,7 +109,7 @@ export const EffectiveDietLanding = () => {
                     <li>Choroby o podłożu autoimmunologicznym</li>
                     <li>Trądzik</li>
                 </ul>
-                Co znajdziesz w ebooku?
+                <strong>Co znajdziesz w ebooku?</strong>
                 <ul>
                     <li>Treść merytoryczną napisaną prostym i zrozumiałym językiem</li>
                     <li>Dokładną kaloryczność potrawy oraz ilość białka, tłuszczów i węglowodanów</li>
@@ -118,36 +120,72 @@ export const EffectiveDietLanding = () => {
                     <li>Listę wymienników</li>
                     <li>Dodatkowe wskazówki przy przepisach</li>
                 </ul>
+                <div className={styles.buy}>
+                    <div className={styles.input}>
+                        <input type="radio" id="1" name="ebook" value="1"
+                            checked />
+                        <label htmlFor="1">Dieta Klasyczna 1600 kcal</label>
+                    </div>
+                    <div className={styles.input}>
+                        <input type="radio" id="2" name="ebook" value="2"
+                        />
+                        <label htmlFor="2">Dieta Klasyczna 1800 kcal</label>
+                    </div>
+                    <div className={styles.input}>
+                        <input type="radio" id="3" name="ebook" value="3"
+                        />
+                        <label htmlFor="3">Dieta Przeciwzapalna 1600 kca</label>
+                    </div>
+                    <div className={styles.input}>
+                        <input type="radio" id="4" name="ebook" value="4"
+                        />
+                        <label htmlFor="4">Dieta Przeciwzapalna 1800 kcal</label>
+                    </div>
+                    <button>Kup</button>
+                </div>
+
             </div>
         </div>
         <div className={styles.description}>
-            Co zyskasz kupując ebooka:
-            Oszczędzisz czas - razem z ebookiem dostaniesz listę zakupów, która będzie pomocna przy
-            planowaniu posiłków. Nie musisz marnować czasu na planowanie posiłków na cały tydzień.
-            Nie będziesz marnować żywności – dzięki liście zakupów i posiłkom w ebooku wszystkie lub prawie
-            wszystkie składniki będą wykorzystane. Jeśli coś zostanie, można to będzie zamienić według
-            wymienników lub wskazówek dołączonych do przepisów.
-
-            Oszczędzisz pieniądze – nie będziesz wydawać pieniędzy na produkty, których aktualnie nie
-            potrzebujesz. Masz ściśle określoną listę i kupujesz produkty tylko z tej listy.
-            Nie dopadnie Cię nuda na talerzu – przepisy w ebooku są tak skomponowane, żeby dania tam
-            zawarte składały się z różnorodnych produktów np. mięso, strączki, ryby, sery, przetwory.
-            Schudniesz – *jeśli będziesz stosować dietę i zalecenia to gwarantuję Ci, że Twoja masa ciała
-            zmniejszy się a Ty poczujesz się zadowolona ze swojego ciała. Pamiętaj o dobraniu odpowiedniej
-            kaloryczności.
-            Poprawisz swoje zdrowie – dieta w ebooku spełnia zapotrzebowanie na wszystkie witaminy i
-            składniki mineralne. Zawartość białka to 20 %, tłuszczy 35 %, a węglowodanów 45 %. Stosując
-            zbilansowaną dietę poprawisz także kondycję włosów, skóry i paznokci.
-            Lepiej poczujesz się mając choroby o podłożu hormonalnym - wersja z dietą przeciwzapalną to must
-            have dla Pań, które mają bolesne miesiączki, hiperprolaktynemię, hiperandrogenizm, PCOS,
-            insulinooporność, endometrioze i inne.
-
-            Dokonując wyboru musisz liczyć się z minusami:
-            - Dieta nie będzie w 100 % dopasowana do Ciebie. Nie wszystkie posiłki mogą Ci zasmakować, jednak
-            poszczególne produkty możesz wymieniać zgodnie z wymiennikami zawartymi w ebooku.
-            - Ebook z jadłospisem nie sprawdzi się u osób, które cierpią na poważniejsze choroby typu choroby
-            zapalne jelit, choroby wątroby, choroby nerek, alergie i *nietolerancje pokarmowe. Jeśli masz np.
-            nietolerancję laktozy to prosto możesz dokonać modyfikacji.
+            <h3>Co zyskasz kupując ebooka:</h3>
+            <ul>
+                <li className={styles.descriptionItem}><strong>Oszczędzisz czas</strong> - razem z ebookiem dostaniesz listę zakupów, która będzie pomocna przy
+                    planowaniu posiłków. Nie musisz marnować czasu na planowanie posiłków na cały tydzień.
+                </li>
+                <li className={styles.descriptionItem}><strong>Nie będziesz marnować żywności</strong> – dzięki liście zakupów i posiłkom w ebooku wszystkie lub prawie
+                    wszystkie składniki będą wykorzystane. Jeśli coś zostanie, można to będzie zamienić według
+                    wymienników lub wskazówek dołączonych do przepisów.
+                </li>
+                <li className={styles.descriptionItem}><strong>Oszczędzisz pieniądze</strong> – nie będziesz wydawać pieniędzy na produkty, których aktualnie nie
+                    potrzebujesz. Masz ściśle określoną listę i kupujesz produkty tylko z tej listy.
+                </li>
+                <li className={styles.descriptionItem}><strong>Nie dopadnie Cię nuda na talerzu</strong> – przepisy w ebooku są tak skomponowane, żeby dania tam
+                    zawarte składały się z różnorodnych produktów np. mięso, strączki, ryby, sery, przetwory.
+                </li>
+                <li className={styles.descriptionItem}><strong>Schudniesz</strong> – *jeśli będziesz stosować dietę i zalecenia to gwarantuję Ci, że Twoja masa ciała
+                    zmniejszy się a Ty poczujesz się zadowolona ze swojego ciała. Pamiętaj o dobraniu odpowiedniej
+                    kaloryczności.
+                </li>
+                <li className={styles.descriptionItem}><strong>Poprawisz swoje zdrowie</strong> – dieta w ebooku spełnia zapotrzebowanie na wszystkie witaminy i
+                    składniki mineralne. Zawartość białka to 20 %, tłuszczy 35 %, a węglowodanów 45 %. Stosując
+                    zbilansowaną dietę poprawisz także kondycję włosów, skóry i paznokci.
+                </li>
+                <li className={styles.descriptionItem}><strong>Lepiej poczujesz się mając choroby o podłożu hormonalnym</strong> - wersja z dietą przeciwzapalną to must
+                    have dla Pań, które mają bolesne miesiączki, hiperprolaktynemię, hiperandrogenizm, PCOS,
+                    insulinooporność, endometrioze i inne.
+                </li>
+            </ul>
+            <br />
+            <h3>Dokonując wyboru musisz liczyć się z minusami:</h3>
+            <ul>
+                <li className={styles.descriptionItem}>Dieta nie będzie w 100 % dopasowana do Ciebie. Nie wszystkie posiłki mogą Ci zasmakować, jednak
+                    poszczególne produkty możesz wymieniać zgodnie z wymiennikami zawartymi w ebooku.
+                </li>
+                <li className={styles.descriptionItem}>Ebook z jadłospisem nie sprawdzi się u osób, które cierpią na poważniejsze choroby typu choroby
+                    zapalne jelit, choroby wątroby, choroby nerek, alergie i *nietolerancje pokarmowe. Jeśli masz np.
+                    nietolerancję laktozy to prosto możesz dokonać modyfikacji.
+                </li>
+            </ul>
         </div>
         <ModalGateway>
             {viewerIsOpen ? (

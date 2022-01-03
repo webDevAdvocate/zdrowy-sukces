@@ -21,14 +21,13 @@ export const Header = () => {
   const router = useRouter();
 
   const headerClasses = classNames(classes.header, {
-    [classes.shrink]: shouldShrink,
+    [classes.shrink]: shouldShrink, [classes.pink]: router.pathname === '/skuteczna-dieta'
   });
 
   useEffect(() => {
     const shrink = position.y > 100 || menuOpened;
 
     if (shrink != shouldShrink) {
-      console.log('set', shrink);
       setShouldShrink(prev => !prev);
     }
 

@@ -22,6 +22,8 @@ $backgroundColorShrinked: $mediumSecondary;
   z-index: 99999;
   transition: $defaultTransition;
 
+  
+
   .logo {
     height: 75px;
     display: flex;
@@ -132,6 +134,51 @@ $backgroundColorShrinked: $mediumSecondary;
     }
   }
 }
+
+// ----------------- PINK ---------------------------
+.header {
+  &.pink {
+    .topControls,
+    .bottomControls {
+      .menuItem {
+        .link {
+          color: $primaryPink;
+        
+          a {
+            color: $primaryPink;
+          }
+        }
+      }
+    }
+  
+    .topControls {
+      .menuItem {
+        .link {
+          color: $primaryPink;
+          a {
+            color: $primaryPink;
+          }
+        }
+      }
+    }
+    
+    .menuIcon {
+    .navicon {
+      background: $primaryPink;
+      
+
+      &:before {
+        background: $primaryPink;
+      }
+
+      &:after {
+        background: $primaryPink;
+      }
+    }
+  }
+}
+}
+
 
 // ------------------- Menu Icon ----------------------
 
