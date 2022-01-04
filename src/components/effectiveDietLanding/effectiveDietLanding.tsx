@@ -43,7 +43,7 @@ export const EffectiveDietLanding = () => {
 
         Promise.all(imagesFull).then((modules) => {
             const srcArr: string[] = modules.map((module: any) => module.default.src)
-            setImages(srcArr);
+            setImages([titleImg.src, ...srcArr]);
         });
     }, [images]);
 
@@ -83,7 +83,7 @@ export const EffectiveDietLanding = () => {
             <div className={styles.info}>
                 <h2>E-book Skuteczna Dieta </h2>
                 <h3>99,00 zł</h3>
-                Masz do wyboru 4 wersje ebooka: Ebook 1600 kcal i 1800 kcal z dietą klasyczną, ebook 1600 kcal i
+                Przed Tobą 4 wersje ebooka: Ebook 1600 kcal i 1800 kcal z dietą klasyczną, ebook 1600 kcal i
                 1800 kcal z dietą przeciwzapalną. Posiłki w każdej wersji możesz wymieniać pomiędzy sobą dowolnie.
                 <br />
                 <br />
@@ -100,7 +100,7 @@ export const EffectiveDietLanding = () => {
                 <ul>
                     <li>PCOS</li>
                     <li>Insulinooporność</li>
-                    <li>Hiperandorgenizm</li>
+                    <li>Hiperandrogenizm</li>
                     <li>Hirsutyzm</li>
                     <li>Hiperprolaktynemię</li>
                     <li>Endometriozę</li>
@@ -134,7 +134,7 @@ export const EffectiveDietLanding = () => {
                     <div className={styles.input}>
                         <input type="radio" id="3" name="ebook" value="3"
                         />
-                        <label htmlFor="3">Dieta Przeciwzapalna 1600 kca</label>
+                        <label htmlFor="3">Dieta Przeciwzapalna 1600 kcal</label>
                     </div>
                     <div className={styles.input}>
                         <input type="radio" id="4" name="ebook" value="4"
@@ -162,8 +162,8 @@ export const EffectiveDietLanding = () => {
                 <li className={styles.descriptionItem}><strong>Nie dopadnie Cię nuda na talerzu</strong> – przepisy w ebooku są tak skomponowane, żeby dania tam
                     zawarte składały się z różnorodnych produktów np. mięso, strączki, ryby, sery, przetwory.
                 </li>
-                <li className={styles.descriptionItem}><strong>Schudniesz</strong> – *jeśli będziesz stosować dietę i zalecenia to gwarantuję Ci, że Twoja masa ciała
-                    zmniejszy się a Ty poczujesz się zadowolona ze swojego ciała. Pamiętaj o dobraniu odpowiedniej
+                <li className={styles.descriptionItem}><strong>Schudniesz</strong> – jeśli będziesz stosować dietę i zalecenia z ebooka to gwarantuję Ci, że Twoja masa ciała
+                    zmniejszy się, a Ty poczujesz się zadowolona ze swojego ciała. Pamiętaj o dobraniu odpowiedniej
                     kaloryczności.
                 </li>
                 <li className={styles.descriptionItem}><strong>Poprawisz swoje zdrowie</strong> – dieta w ebooku spełnia zapotrzebowanie na wszystkie witaminy i
@@ -172,7 +172,7 @@ export const EffectiveDietLanding = () => {
                 </li>
                 <li className={styles.descriptionItem}><strong>Lepiej poczujesz się mając choroby o podłożu hormonalnym</strong> - wersja z dietą przeciwzapalną to must
                     have dla Pań, które mają bolesne miesiączki, hiperprolaktynemię, hiperandrogenizm, PCOS,
-                    insulinooporność, endometrioze i inne.
+                    insulinooporność, endometriozę i inne.
                 </li>
             </ul>
             <br />
@@ -182,7 +182,7 @@ export const EffectiveDietLanding = () => {
                     poszczególne produkty możesz wymieniać zgodnie z wymiennikami zawartymi w ebooku.
                 </li>
                 <li className={styles.descriptionItem}>Ebook z jadłospisem nie sprawdzi się u osób, które cierpią na poważniejsze choroby typu choroby
-                    zapalne jelit, choroby wątroby, choroby nerek, alergie i *nietolerancje pokarmowe. Jeśli masz np.
+                    zapalne jelit, choroby wątroby, choroby nerek, alergie i nietolerancje pokarmowe. Jeśli masz np.
                     nietolerancję laktozy to prosto możesz dokonać modyfikacji.
                 </li>
             </ul>
@@ -192,10 +192,7 @@ export const EffectiveDietLanding = () => {
                 <Modal onClose={closeLightbox}>
                     <Carousel
                         currentIndex={currentImage}
-                        views={[
-                            titleImg.src,
-                            ...images,
-                        ].map((x) => ({
+                        views={images.map((x) => ({
                             source: x,
                         }))}
                     />

@@ -20,7 +20,7 @@ const prices: PriceItemModel[] = [
         price: 349,
         items: [
             { text: "Wywiad w formie formularza w pliku Word + możliwość dodatkowych pytań mailowo lub telefonicznie" },
-            { text: "Jeden indywidualny 14 dniowy jadłospis" },
+            { text: "Jeden indywidualny 14-dniowy jadłospis" },
             { text: "Dwie konsultacje w formie e-mail lub rozmowy tel/wideo" },
             {
                 text: "Notatka pdf zawierająca:", bullets: [
@@ -40,7 +40,7 @@ const prices: PriceItemModel[] = [
         savings: 298,
         items: [
             { text: "Wywiad w formie formularza w pliku Word + możliwość dodatkowych pytań mailowo lub telefonicznie" },
-            { text: "Trzy indywidualne 14 dniowe jadłospisy" },
+            { text: "Trzy indywidualne 14-dniowe jadłospisy" },
             { text: "Sześć konsultacji w formie e-mail lub rozmowy tel/wideo" },
             {
                 text: "Notatka pdf zawierająca:", bullets: [
@@ -59,10 +59,10 @@ const prices: PriceItemModel[] = [
         price: 149,
         items: [
             {
-                text: "Około 40 minutowa rozmowa obejmująca", bullets: [
+                text: "Około 40 minutowa rozmowa obejmująca:", bullets: [
                     { text: "Ustalenie Twojego zapotrzebowania energetycznego" },
-                    { text: "Omówienie i analiza aktualnego sposobu odywiania" },
-                    { text: "Lista zaleceń które moesz wdroyć po konsultacji" },
+                    { text: "Omówienie i analiza aktualnego sposobu odżywiania" },
+                    { text: "Lista zaleceń które możesz wdrożyć po konsultacji" },
                     { text: "Omówienie wyników badań" },
                 ]
             },
@@ -72,7 +72,7 @@ const prices: PriceItemModel[] = [
         name: "Indywidualny 7-dniowy jadłospis",
         price: 119,
         items: [
-            { text: "Indywidualny 7 dniowy jadłospis na podstawie wypełnionego kwestionariusza zdrowotno-żywieniowego" },
+            { text: "Indywidualny 7-dniowy jadłospis na podstawie wypełnionego kwestionariusza zdrowotno-żywieniowego" },
             {
                 text: "Notatka pdf zawierająca:", bullets: [
                     { text: "Omówienie dotychczasowego żywienia" },
@@ -104,7 +104,7 @@ const prices: PriceItemModel[] = [
         name: "Indywidualny miesięczny jadłospis",
         price: 239,
         items: [
-            { text: "Indywidualny 14-dniowy jadłospis na podstawie wypełnionego kwestionariusza zdrowotno-żywieniowego" },
+            { text: "Indywidualny 28-dniowy jadłospis na podstawie wypełnionego kwestionariusza zdrowotno-żywieniowego" },
             {
                 text: "Notatka pdf zawierająca:", bullets: [
                     { text: "Omówienie dotychczasowego żywienia" },

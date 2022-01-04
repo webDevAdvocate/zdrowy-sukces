@@ -16,11 +16,25 @@
         left: calc(50% - 75px);
         right: calc(50% - 75px);
         width: 150px;
-        line-height: 35px;
+        line-height: 30px;
         color: white;
-        background-color: $primaryPink;
+        background-color: #cb6b7f;
         border: none;
         border-radius: 5px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        .button {
+            bottom: 50px;
+            left: calc(50% - 125px);
+            right: calc(50% - 125px);
+            width: 250px;
+            line-height: 50px;
+            font-size: 1.4rem;
+        }
     }
 }
 
