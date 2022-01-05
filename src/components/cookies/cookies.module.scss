@@ -1,0 +1,47 @@
+@import "../../../styles/globalVars.scss";
+
+.cookies {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: $primaryPink;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 999;
+  text-align: justify;
+
+  h3 {
+    text-align: center;
+  }
+
+  .link {
+    color: $pinkThertiary;
+  }
+
+  .button {
+    width: 200px;
+    line-height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    color: $pinkThertiary;
+    border: none;
+    line-height: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .cookies {
+    right: 10px;
+    bottom: 10px;
+    width: 700px;
+    padding: 10px 30px;
+  }
+}

@@ -1,14 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Footer } from '../src/components/footer/footer'
-import { Posts } from '../src/components/instagram/instagram'
 import { Header } from '../src/components/header/header';
 import { EffectiveDietLanding } from '../src/components/effectiveDietLanding/effectiveDietLanding';
 
 import styles from '../styles/Home.module.css'
+import { Cookies } from '../src/components/cookies/cookies';
 
 
-const EffectiveDiet: NextPage<{ posts: Posts }> = ({ posts }) => {
+const EffectiveDiet: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
@@ -16,9 +16,10 @@ const EffectiveDiet: NextPage<{ posts: Posts }> = ({ posts }) => {
                 <meta name="description" content="Zdrowy sukces" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Header />
+            <Header pink />
             <EffectiveDietLanding />
             <Footer />
+            <Cookies />
         </div>
     )
 }

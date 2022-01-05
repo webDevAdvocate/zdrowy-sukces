@@ -2,7 +2,6 @@ import React, { useRef, useCallback, useState, useEffect } from "react";
 import { isMobile } from "react-device-detect";
 import classNames from "classnames";
 import Link from 'next/link';
-import { useRouter } from 'next/router'
 import { faInstagram, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useScrollPosition } from "react-use-scroll-position";
@@ -13,15 +12,14 @@ const FACEBOOK_URL = "https://www.facebook.com/dietetykzdrowysukces";
 import classes from "./header.module.scss";
 import logo from "../../assets/images/header_logo.png";
 
-export const Header = () => {
+export const Header = ({ pink }: { pink?: boolean }) => {
   const [menuOpened, setMenuOpened] = useState(false);
   const [shouldShrink, setShouldShrink] = useState(false);
   const menuButtonRef = useRef<HTMLInputElement | null>(null);
   const position = useScrollPosition();
-  const router = useRouter();
 
   const headerClasses = classNames(classes.header, {
-    [classes.shrink]: shouldShrink, [classes.pink]: router.pathname === '/skuteczna-dieta'
+    [classes.shrink]: shouldShrink, [classes.pink]: pink
   });
 
   useEffect(() => {

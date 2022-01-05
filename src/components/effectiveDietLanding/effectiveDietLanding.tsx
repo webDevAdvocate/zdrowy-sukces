@@ -26,6 +26,7 @@ export const EffectiveDietLanding = () => {
     const [images, setImages] = useState<string[]>([]);
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
+    const [variant, setVariant] = useState(1);
 
     useEffect(() => {
         if (images.length) {
@@ -47,7 +48,7 @@ export const EffectiveDietLanding = () => {
         });
     }, [images]);
 
-    const openLightbox = useCallback((event, { photo, index }) => {
+    const openLightbox = useCallback((_, { photo, index }) => {
         setCurrentImage(index);
         setViewerIsOpen(true);
     }, []);
@@ -122,26 +123,26 @@ export const EffectiveDietLanding = () => {
                 </ul>
                 <div className={styles.buy}>
                     <div className={styles.input}>
-                        <input type="radio" id="1" name="ebook" value="1"
-                            checked />
+                        <input onChange={() => setVariant(1)} type="radio" id="1" name="ebook" value={variant}
+                            checked={variant === 1} />
                         <label htmlFor="1">Dieta Klasyczna 1600 kcal</label>
                     </div>
                     <div className={styles.input}>
-                        <input type="radio" id="2" name="ebook" value="2"
-                        />
+                        <input onChange={() => setVariant(2)} type="radio" id="2" name="ebook" value={variant}
+                            checked={variant === 2} />
                         <label htmlFor="2">Dieta Klasyczna 1800 kcal</label>
                     </div>
                     <div className={styles.input}>
-                        <input type="radio" id="3" name="ebook" value="3"
-                        />
+                        <input onChange={() => setVariant(3)} type="radio" id="3" name="ebook" value={variant}
+                            checked={variant === 3} />
                         <label htmlFor="3">Dieta Przeciwzapalna 1600 kcal</label>
                     </div>
                     <div className={styles.input}>
-                        <input type="radio" id="4" name="ebook" value="4"
-                        />
+                        <input onChange={() => setVariant(4)} type="radio" id="4" name="ebook" value={variant}
+                            checked={variant === 4} />
                         <label htmlFor="4">Dieta Przeciwzapalna 1800 kcal</label>
                     </div>
-                    <button>Kup</button>
+                    <button onClick={() => console.log(variant)}>Kup</button>
                 </div>
 
             </div>

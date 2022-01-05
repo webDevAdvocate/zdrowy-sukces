@@ -1,0 +1,47 @@
+@import "../../../styles/globalVars.scss";
+
+
+.section {
+    padding: 120px 20px;
+    color: $primaryPink ;
+    max-width: 1366px;
+    margin: auto;
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+      
+    .list {
+        text-align: left;
+    
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .section {
+        
+        h1 {
+            font-size: 3rem;
+        }
+
+
+        h3 {
+            font-size: 2rem;
+        }
+          
+        .list {
+            text-align: left;
+        
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

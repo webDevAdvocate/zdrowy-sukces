@@ -39,6 +39,10 @@
                     color: lightgray;
                     font-weight: 700;
                 }
+
+                &.invalid {
+                    border: 2px solid red;
+                }
             }
     
             .input {
@@ -53,6 +57,7 @@
                 line-height: 40px;
                 color: white;
                 text-transform: uppercase;
+                cursor: pointer;
             }
         }
     }

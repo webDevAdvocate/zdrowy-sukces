@@ -30,8 +30,8 @@ const posts = [
 
 export const Instagram = () => {
 
-    const postsHTML = posts.map((post: Post) => {
-        return <Post post={post} />
+    const postsHTML = posts.map((post: Post, index) => {
+        return <Post key={index} index={index} post={post} />
     })
 
     return <section className={styles.instagram}>
@@ -47,9 +47,9 @@ export const Instagram = () => {
     </section>
 }
 
-const Post = ({ post }: { post: Post }) => {
+const Post = ({ post, index }: { post: Post, index: number }) => {
     return (
-        <a target="_blank" href={post.url} className={styles.post}>
+        <a key={index} target="_blank" href={post.url} className={styles.post}>
             <img className={styles.image} src={post.image || "#"} />
             <span className={styles.title}>{post.title}</span>
         </a>

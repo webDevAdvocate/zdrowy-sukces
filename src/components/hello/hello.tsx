@@ -12,7 +12,7 @@ export const Hello = () => {
                 <div className={styles.text}>
                     <h1>Cześć, Tu Patrycja!</h1>
                     <h3>Pomagam kobietom zawalczyć o pewność siebie, uporać się z zaburzeniami hormonalnymi i pokochać gotowanie</h3>
-                    <h5>Prowadzę instagrama o nazwie zdrowy_sukces, gdzie dzielę się wiedzą i przepisami na pyszne dania.</h5>
+                    <h5>Prowadzę instagrama o nazwie <strong>zdrowy_sukces</strong>, gdzie dzielę się wiedzą i przepisami na pyszne dania.</h5>
                 </div>
             </div>
             <div className={styles.photoBlock}>

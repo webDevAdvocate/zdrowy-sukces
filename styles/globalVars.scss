@@ -1,34 +1,16 @@
 
 $primaryPink: #cb6b7f;
 $pinkSecondary: #dc98a4;
+$pinkThertiary: #793441;
+$pinkForth: #a04858;
 $grey: #dddedf;
-$lightPrimary: #fffcf8;
-$lightSecondary: #fcf6ef;
-$lightTertiary: #ffe4c2;
 
-$brownPrimary: #603d1b;
-
-$mediumPrimary: #e8dcca;
-$mediumSecondary: #e9ddd5;
-$mediumTertiary: #d3beb0;
-
-$contrastPrimary: #c55b71;
-$contrastSecondary: #a01d2b;
-$contrastThertiary: rgb(192, 2, 0);
-
-$contrastGreenPrimary: rgb(146, 212, 106);
-
-$sophisticatedFont: "Great Vibes", cursive;
-$sophisticatedCursive: "Sansita Swashed", cursive;
-$sophisticatedBold: "Anton", sans-serif;
-$normalFont: "Open Sans", sans-serif;
-
-$boxShadow: 3px 3px 5px $contrastPrimary;
-$boxShadowHover: 5px 5px 8px $contrastPrimary, -1px -1px $contrastPrimary;
-$textShadow: 1px 3px 3px $contrastPrimary;
-$textShadowHover: 1px 1px 1px $contrastPrimary;
+$boxShadow: 3px 3px 5px $pinkThertiary;
+$boxShadowHover: 5px 5px 8px $pinkThertiary, -1px -1px $pinkThertiary;
+$textShadow: 1px 3px 3px $pinkThertiary;
+$textShadowHover: 1px 1px 1px $pinkThertiary;
 $borderRadius: 10px;
-$border: 1px solid $contrastPrimary;
+$border: 1px solid $pinkThertiary;
 
 $textLoopIndex: 1;
 $parallaxIndex: 1;

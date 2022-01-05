@@ -12,6 +12,7 @@ import { Header } from '../src/components/header/header';
 import { EffectiveDietSection } from '../src/components/effectiveDietSection/effectiveDietSection'
 
 import styles from '../styles/Home.module.css'
+import { Cookies } from '../src/components/cookies/cookies'
 
 const Home: NextPage = () => {
   return (
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
       <Prices />
       <Certificates />
       <Footer />
+      <Cookies />
     </div>
   )
 }

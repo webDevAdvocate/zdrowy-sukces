@@ -120,7 +120,7 @@ const prices: PriceItemModel[] = [
 
 export const Prices = () => {
 
-    const pricesHTML = prices.map(model => <PriceItem model={model} />)
+    const pricesHTML = prices.map((model, index) => <PriceItem index={index} key={index} model={model} />)
 
     return <section id="cennik" className={styles.prices}>
         <div className={styles.wrapper}>
@@ -139,30 +139,30 @@ export const Prices = () => {
     </section>
 }
 
-const PriceItem = ({ model }: { model: PriceItemModel }) => {
+const PriceItem = ({ model, index }: { model: PriceItemModel, index: number }) => {
 
-    const listHTML = model.items.map(item => {
+    const listHTML = model.items.map((item, i) => {
         if (!item.bullets?.length) {
             return (
-                <li className={styles['description-item']}>{item.text}</li>
+                <li key={model.name + i + index + "non-bullet-item"} className={styles['description-item']}>{item.text}</li>
             )
         }
 
-        const bulletsHTML = item.bullets.map(bullet => {
+        const bulletsHTML = item.bullets.map((bullet, i) => {
             return (
-                <li className={styles['description-item-bullet']}>{bullet.text}</li>
+                <li key={model.name + i + index + "bullet"} className={styles['description-item-bullet']}>{bullet.text}</li>
             )
         })
 
         return (
-            <>
+            <div key={model.name + i + index + "bullet-item"} >
                 <li className={styles['description-item']}>{item.text}</li>
                 {bulletsHTML}
-            </>
+            </div>
         )
     })
 
-    return <div className={styles.box}>
+    return <div key={model.name + index + 'item'} className={styles.box}>
         <div className={styles.title}>{model.name}</div>
         <div className={styles.price}>{model.price} zł</div>
         {model.savings && (<div className={styles.savings}>(oszczędzasz {model.savings} zł)</div>)}
