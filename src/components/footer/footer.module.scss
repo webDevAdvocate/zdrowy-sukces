@@ -25,4 +25,16 @@
         text-decoration: underline;
         margin-top: 10px;
     }
+
+    .doctor {
+        font-size: small;
+        text-align: left;
+        grid-area: doctor;
+        color: white;
+  
+        .doctorScript {
+          margin: 0 0 50px 0;
+          border-radius: 10px;
+        }
+      }
 }

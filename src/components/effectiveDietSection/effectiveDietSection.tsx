@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import background from '../../assets/images/effective_diet_section_mobile.png';
+import background from '../../assets/images/effective_diet_section_mobile.jpg';
 
 import styles from './effectiveDietSection.module.scss';
 

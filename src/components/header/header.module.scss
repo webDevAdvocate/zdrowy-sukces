@@ -19,11 +19,10 @@ $backgroundColorShrinked: $pinkThertiary;
   height: 90px;
   background: $backgroundColor;
   box-shadow: 2px 2px 4px 2px rgba(197, 91, 113, 0.4);
-  z-index: 99999;
+  z-index: 99;
   transition: $defaultTransition;
 
   
-
   .logo {
     height: 90px;
     display: flex;
@@ -80,10 +79,14 @@ $backgroundColorShrinked: $pinkThertiary;
 
           a {
             color: white;
+
+            &:hover {
+              color: $pinkThertiary;
+            }
           }
 
           &:hover {
-            opacity: 0.6;
+            color: $pinkThertiary;
           }
         }
       }
@@ -98,7 +101,7 @@ $backgroundColorShrinked: $pinkThertiary;
           color: white;
 
           a {
-            color: whitesmoke;
+            color: white;
           }
         }
       }

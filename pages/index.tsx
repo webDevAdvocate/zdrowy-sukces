@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import { About } from '../src/components/about/about'
 import { Certificates } from '../src/components/certificates/certificates'
 import { Concerns } from '../src/components/concerns/concerns'
@@ -17,11 +16,6 @@ import { Cookies } from '../src/components/cookies/cookies'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Zdrowy Sukces</title>
-        <meta name="description" content="Zdrowy sukces" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <Hello />
       <EffectiveDietSection />

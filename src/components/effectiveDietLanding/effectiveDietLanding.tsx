@@ -5,7 +5,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 
 import styles from './effectiveDietLanding.module.scss';
 
-import titleImg from '../../assets/images/effective_diet_title.png'
+import titleImg from '../../assets/images/effective_diet_title.jpg'
 
 function importAll(r: __WebpackModuleApi.RequireContext) {
     return r.keys().map(r);

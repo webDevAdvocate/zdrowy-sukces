@@ -1,0 +1,3 @@
+Sitemap: https://zdrowy-sukces.pl/sitemap.xml
+User-agent: *
+Disallow:

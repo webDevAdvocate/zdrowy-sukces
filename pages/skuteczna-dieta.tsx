@@ -12,9 +12,8 @@ const EffectiveDiet: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Zdrowy Sukces</title>
-                <meta name="description" content="Zdrowy sukces" />
-                <link rel="icon" href="/favicon.ico" />
+                <title>Skuteczna dieta - sprawdź 4 wersje e-booka</title>
+                <meta name="description" content="Przed Tobą 4 wersje ebooka: Ebook 1600 kcal i 1800 kcal z dietą klasyczną, ebook 1600 kcal i 1800 kcal z dietą przeciwzapalną. Posiłki w każdej wersji możesz wymieniać pomiędzy sobą dowolnie." />
             </Head>
             <Header pink />
             <EffectiveDietLanding />

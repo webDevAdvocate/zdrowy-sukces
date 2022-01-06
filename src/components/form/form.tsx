@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import cx from 'classnames';
+import Link from 'next/link';
 
 import styles from './form.module.scss';
 
@@ -57,6 +58,9 @@ const validators = {
 
 type FieldType = "email" | "name" | "message";
 
+const successMessage = { firstLine: "Dziękuję za wiadomość!", secondLine: "Zwykle odpowiadam w ciągu 24h." }
+const failureMessage = { firstLine: "Przepraszam, coś poszło nie tak :(", secondLine: "Możesz spróbować później lub napisać poprzez instagrama bądź facebooka." }
+
 export const Form = () => {
     const [formValues, setFormValues] = useState<{ name: string, email: string, message: string }>(
         {
@@ -65,10 +69,27 @@ export const Form = () => {
             message: "",
         }
     )
+    const [privacyConsent, setPrivacyConsent] = useState(false);
     const [validationError, setValidationError] = useState({ email: false, name: false, message: false });
+    const [loader, setLoader] = useState(false);
+    const [message, setMessage] = useState<{ firstLine: string, secondLine: string } | null>(null);
 
     const onChange = (key: string, value: any) => {
         setFormValues(prev => ({ ...prev, ...{ [key]: value } }))
+    }
+
+    const handleMessage = (message: { firstLine: string, secondLine: string }) => {
+        setMessage(message);
+        setTimeout(() => setMessage(null), 5000);
+    }
+
+    const clearForm = () => {
+        setFormValues({
+            name: "",
+            email: "",
+            message: "",
+        });
+        setPrivacyConsent(false);
     }
 
     const handleSubmit = () => {
@@ -84,18 +105,43 @@ export const Form = () => {
             return;
         }
 
-        sendEmail({ ...formValues, subject: "Pata robi e-booka i sra w portki bo działalność" });
+        setLoader(true);
+        sendEmail({ ...formValues, subject: "Kontak zdrowy-sukces.pl" })
+            .then(() => {
+                handleMessage(successMessage);
+            })
+            .catch(() => {
+                handleMessage(failureMessage);
+            })
+            .finally(() => {
+                clearForm();
+                setLoader(false);
+            });
     }
 
     return <section id="kontakt" className={styles.section}>
         <div className={styles.content}>
             <h4>Napisz do mnie :)</h4>
-            <form className={styles.form}>
-                <input onChange={(evt) => onChange("email", evt.target.value)} className={cx(styles.input, { [styles.invalid]: validationError["email"] })} placeholder="Adres e-mail" type="email"></input>
-                <input onChange={(evt) => onChange("name", evt.target.value)} className={cx(styles.input, { [styles.invalid]: validationError["name"] })} placeholder="Imię" type="text"></input>
-                <textarea onChange={(evt) => onChange("message", evt.target.value)} className={cx(styles.textarea, { [styles.invalid]: validationError["message"] })} placeholder="Treść wiadomości..." rows={4}></textarea>
-                <button onClick={handleSubmit} className={styles.button} type="button">Wyślij</button>
-            </form>
+            {message ? (
+                <div className={styles.message}>
+                    <div>{message.firstLine}</div>
+                    <div>{message.secondLine}</div>
+                </div>
+            ) : (
+                <form className={styles.form}>
+                    <input onChange={(evt) => onChange("email", evt.target.value)} className={cx(styles.input, { [styles.invalid]: validationError["email"] })} placeholder="Adres e-mail" type="email"></input>
+                    <input onChange={(evt) => onChange("name", evt.target.value)} className={cx(styles.input, { [styles.invalid]: validationError["name"] })} placeholder="Imię" type="text"></input>
+                    <textarea onChange={(evt) => onChange("message", evt.target.value)} className={cx(styles.textarea, { [styles.invalid]: validationError["message"] })} placeholder="Treść wiadomości..." rows={4}></textarea>
+                    <div className={styles.privacy}>
+                        <input type="checkbox" onChange={() => setPrivacyConsent(prev => !prev)} checked={privacyConsent} />
+                        <span className={styles.privacy}> Akceptuję <span className={styles.link}><Link href="/polityka-prywatnosci">politykę prywatności</Link></span></span>
+                    </div>
+                    <button disabled={!privacyConsent} onClick={handleSubmit} className={styles.button} type="button">
+                        Wyślij
+                        {loader && <div className={styles.spinner}><div></div><div></div><div></div><div></div></div>}
+                    </button>
+                </form>
+            )}
         </div>
     </section>
 }
