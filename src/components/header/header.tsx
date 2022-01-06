@@ -108,13 +108,13 @@ export const Header = ({ pink }: { pink?: boolean }) => {
                 </Link>
               </div>
             </li>
-            <li onClick={onMenuItemClick} className={classes.menuItem}>
+            {/* <li onClick={onMenuItemClick} className={classes.menuItem}>
               <div className={classes.link}>
                 <Link href="/skuteczna-dieta">
                   Skuteczna dieta
                 </Link>
               </div>
-            </li>
+            </li> */}
             <li onClick={onMenuItemClick} className={classes.menuItem}>
               <div className={classes.link}>
                 <Link href="/#wspolpraca">
