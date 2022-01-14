@@ -26,7 +26,7 @@ export const PrivacySection = () => {
         <br />
         Użytkownik – każda osoba fizyczna odwiedzająca Serwis lub korzystająca z jednej albo kilku
         usług czy funkcjonalności opisanych w Polityce.
-        <h4 className={classes.contrast}>1. Przetwarzanie danych.</h4>
+        <h4 className={classes.contrast}>2. Przetwarzanie danych.</h4>
         W związku z korzystaniem przez Użytkownika z Serwisu Administrator zbiera dane
         w zakresie niezbędnym do świadczenia poszczególnych usług. Poniżej zostały opisane
         szczegółowe zasady oraz cele przetwarzania danych osobowych gromadzonych podczas
