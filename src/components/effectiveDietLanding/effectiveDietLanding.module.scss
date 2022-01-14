@@ -34,6 +34,19 @@
         h3 {
             margin-top: 10px;
             text-align: left;
+
+            &.no-margin {
+                margin-bottom: 0;
+            }
+
+            .promo {
+                text-decoration: line-through;
+                font-size: 1.2rem;
+            }
+        }
+
+        h5 {
+            margin-top: 0;
         }
 
         .gallery {
@@ -62,7 +75,7 @@
                 }
             }
 
-            button {
+            .button {
                 width: 150px;
                 border: none;
                 line-height: 30px;
@@ -71,6 +84,9 @@
                 border-radius: 3px;
                 color: white;
                 cursor: pointer;
+                padding: 5px 40px;
+                margin-top: 50px;
+                display: block;
             }
 
         }

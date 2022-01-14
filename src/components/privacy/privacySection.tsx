@@ -2,418 +2,255 @@ import classes from './privacySection.module.scss';
 
 export const PrivacySection = () => {
     return <section className={classes.section}>
-        <h1>POLITYKA PRYWATNOŚCI SERWISU INTERNETOWEGO</h1>
+        <h1>Polityka Prywatności</h1>
         <h3>
             <a className={classes.contrast} href=">www.zdrowy-sukces.pl">
                 www.zdrowy-sukces.pl
             </a>
         </h3>
         <br />
-        <h4 className={classes.contrast}>§ 1</h4>
-        <h4 className={classes.contrast}>Postanowienia ogólne</h4>
-        <ol className={classes.list}>
+        <h4 className={classes.contrast}>1. Definicje</h4>
+        Administrator – Patrycja Marszalec, prowadzącą działalność gospodarczą wpisaną do CEIDG
+        pod nazwą Zdrowy Sukces Patrycja Marszalec
+        <br />
+        <br />
+        RODO – Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27
+        kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
+        osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy
+        95/46/WE.
+        <br />
+        <br />
+        Serwis – serwis internetowy prowadzony przez Administratora pod adresem: www.zdrowy-
+        sukces.pl
+        <br />
+        <br />
+        Użytkownik – każda osoba fizyczna odwiedzająca Serwis lub korzystająca z jednej albo kilku
+        usług czy funkcjonalności opisanych w Polityce.
+        <h4 className={classes.contrast}>1. Przetwarzanie danych.</h4>
+        W związku z korzystaniem przez Użytkownika z Serwisu Administrator zbiera dane
+        w zakresie niezbędnym do świadczenia poszczególnych usług. Poniżej zostały opisane
+        szczegółowe zasady oraz cele przetwarzania danych osobowych gromadzonych podczas
+        korzystania z Serwisu przez Użytkownika.
+        <h4 className={classes.contrast}>3. Cele i podstawy prawne przetwarzania danych.</h4>
+        Dane osobowe wszystkich Użytkowników korzystających z Serwisu (w tym adres IP lub inne
+        identyfikatory oraz informacje gromadzone za pośrednictwem plików cookies), przetwarzane
+        są przez Administratora:
+        <ol type="i">
             <li>
-                Polityka Prywatności określa zasady przetwarzania i ochrony danych
-                osobowych Użytkowników korzystających z serwisu internetowego dostępnego
-                pod adresem internetowym{" "}
-                <a className={classes.contrast} href=">www.zdrowy-sukces.pl">
-                    www.zdrowy-sukces.pl
-                </a>
-                , zwanego dalej Serwisem. Dokument określa również zasady stosowania
-                plików cookies.
-            </li>
-            <li>Polityka Prywatności Serwisu ma charakter informacyjny.</li>
-            <li>
-                Administratorem danych osobowych Użytkowników Serwisu, w rozumieniu
-                rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27
-                kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z
-                przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich
-                danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o
-                ochronie danych) z dnia 27 kwietnia 2016 r. (Dz. Urz. UE. L Nr 119, str.
-                1), zwanym dalej RODO, oraz ustawy z dnia 10 maja 2018 r. o ochronie
-                danych osobowych (Dz.U.2018.1000), jest Patrycja Marszalec, posiadająca
-                adres miejsca głównego wykonywania działalności i adres do doręczeń
-                Luchów Górny 60, 23-420 Tarnogród, adres poczty elektronicznej
-                zdrowysukcesdietetyka@gmail.com, numer telefonu: 883213756, zwana dalej
-                Administratorem i będąca jednocześnie Usługodawcą Serwisu internetowego.
-            </li>
-            <li>
-                Dane osobowe Użytkownika są przetwarzane zgodnie z przepisami o ochronie
-                danych osobowych oraz ustawą z dnia 18 lipca 2002 r. o świadczeniu usług
-                drogą elektroniczną (Dz. U. Nr 144, poz. 1204, z późn. zm.).
-            </li>
-            <li>
-                Administrator dokłada wszelkiej staranności w celu ochrony interesów
-                osób, których zbierane dane dotyczą, a w szczególności zapewnia, że dane
-                te są przetwarzane zgodnie z prawem. Administrator oświadcza, że
-                zbierane przez niego dane są przechowywane w postaci umożliwiającej
-                identyfikację osób, których dotyczą, nie dłużej niż jest to niezbędne do
-                osiągnięcia danego celu przetwarzania.
+                w celu świadczenia usług drogą elektroniczną w zakresie udostępniana
+                Użytkownikom treści gromadzonych w Serwisie, a obsługi zapytań
+                Użytkownika, w przypadku świadczenia usług konsultacji
+                dietetycznych może dochodzić do przetwarzania danych wrażliwych-
+                zdrowotnych. Klient za każdym razem zostanie przed udostępnieniem
+                danych wrażliwych poinformowany o tym – wówczas podstawą
+                prawną przetwarzania jest niezbędność przetwarzania do wykonania
+                umowy (art. 6 ust. 1 lit b RODO);
             </li>
             <li>
-                Użytkownik, który korzysta z usług i narzędzi udostępnionych w Serwisie
-                internetowym, potwierdza zapoznanie się z postanowieniami Polityki
-                Prywatności tego Serwisu, a także wyraża zgodę, na wykorzystywanie jego
-                danych osobowych zgodnie z Polityką Prywatności.
+                w celach analitycznych i statystycznych – wówczas podstawą
+                prawną przetwarzania jest uzasadniony interes Administratora (art. 6
+                ust. 1 lit f RODO) polegający na prowadzeniu analiz aktywności
+                Użytkowników, a także ich preferencji w celu poprawy stosowanych
+                funkcjonalności i świadczonych usług;
             </li>
             <li>
-                Administrator Serwisu internetowego na zasadach określonych w Polityce
-                Prywatności posiada wyłączny dostęp do danych. Dostęp do danych
-                osobowych Użytkownika może być również powierzony innym podmiotom, które
-                to podmioty gromadzą, przetwarzają i przechowują dane osobowe zgodnie ze
-                swoimi regulaminami i politykami prywatności oraz osobom zajmującym się
-                naprawianiem problemów mogących wydarzyć się na stronie.
+                w celu ewentualnego ustalenia i dochodzenia roszczeń lub
+                obrony przed nimi – podstawą prawną przetwarzania jest uzasadniony
+                interes Administratora (art. 6 ust. 1 lit f RODO) polegający na
+                ochronie jego praw;
             </li>
         </ol>
-        <h4 className={classes.contrast}>§ 2</h4>
-        <h4 className={classes.contrast}>
-            Gromadzenie, pozyskiwanie i cel zbierania danych osobowych
-        </h4>
-        <ol className={classes.list}>
-            <li>
-                Administrator pozyskuje informacje o użytkownikach m.in. poprzez
-                gromadzenie logów serwera za pośrednictwem operatora hostingowego.
-            </li>
-            <li>
-                Dane są zapisywane przez serwer. Logi serwera stanowią wyłącznie
-                materiał pomocniczy służący do administrowania Serwisem, a ich zawartość
-                nie jest ujawniana nikomu poza osobami upoważnionymi do administrowania
-                serwerem.
-            </li>
-            <li>
-                Administrator w ramach Serwisu internetowego może gromadzić dane osobowe
-                Użytkowników kontaktujących się z Administratorem w ramach obsługi
-                użytkownika, a które to dane osobowe są niezbędne do zrealizowania danej
-                prośby Użytkownika i kontaktu z nim w celu udzielenia odpowiedzi.
-                Podstawą przetwarzania danych jest art. 6 ust. 1 lit. a RODO – zgoda na
-                przetwarzanie. Podstawą prawną przetwarzania po ewentualnym zakończeniu
-                kontaktu będzie usprawiedliwiony cel w postaci archiwizacji
-                korespondencji na potrzeby wykazania jej przebiegu w przyszłości
-                (stosownie do art. 6 ust. 1 lit. f RODO). Jeżeli po kontakcie dojdzie do
-                zawarcia umowy, dane będą przetwarzane na podstawie art. 6 ust. 1 lit. b
-                RODO.
-            </li>
-            <li>
-                Administrator przetwarza dane osobowe Użytkowników niezbędne do
-                prawidłowej realizacji usług dostępnych w Serwisie internetowym i jest
-                uprawniony do wykorzystywania zgromadzonych i przechowywanych w ramach
-                Serwisu internetowego danych w następujących celach:
-                <ol type="a" className={classes.list}>
-                    <li>
-                        monitorowania aktywności wszystkich oraz konkretnych Użytkowników,
-                    </li>
-                    <li>marketingu bezpośredniego swoich usług lub produktów</li>
-                    <li>
-                        dostosowywania oferty i doświadczeń Użytkownika, we właściwościach
-                        Serwisu,
-                    </li>
-                    <li>egzekwowania przestrzegania Polityki Prywatności,</li>
-                    <li>
-                        kontaktowania się z Użytkownikami, w szczególności w celach
-                        związanych ze świadczeniem usług, obsługą Użytkowników, dozwolonymi
-                        działaniami marketingowymi,
-                    </li>
-                    <li>
-                        przeprowadzania badań i analiz w celu poprawy działania dostępnych
-                        usług,
-                    </li>
-                </ol>
-            </li>
-            <li>
-                Administrator jest uprawniony do przechowywania zgromadzonych i
-                śledzonych w Serwisie internetowym danych wyłącznie w zakresie
-                realizacji powyżej określonych celów.
-            </li>
-            <li>
-                Administrator jest uprawniony do automatycznego pozyskiwania i
-                rejestrowania danych przekazywanych na serwer przez przeglądarki
-                internetowe lub urządzenia Użytkowników, np. adres IP, parametry
-                oprogramowania i sprzętu, przeglądane strony, numer identyfikacyjny
-                urządzenia mobilnego oraz inne dane dotyczące urządzeń i korzystania z
-                systemów. Gromadzenie powyższych informacji następować będzie w
-                przypadku korzystania ze Serwisu internetowego.
-            </li>
-            <li>
-                Administrator zbiera, przetwarza i przechowuje następujące dane
-                Użytkowników:
-                <ol type="a" className={classes.list}>
-                    <li>adres poczty elektronicznej (adres e-mail),</li>
-                    <li>imię,</li>
-                    <li>treść wiadomości.</li>
-                </ol>
-            </li>
-            <li>
-                Administrator oświadcza, iż podanie danych przez Użytkownika, w wyżej
-                wskazanym zakresie, jest dobrowolne. Ich podanie może być jednak
-                niezbędne do zawarcia i realizacji Umowy o świadczenie Usługi
-                elektronicznej w Serwisie internetowym.
-            </li>
-            <li>
-                Administrator może udostępniać dane zanonimizowane innym podmiotom, w
-                tym partnerom Serwisu internetowego w celu dokonania rozpoznania
-                atrakcyjności reklam i usług dla Użytkowników, poprawy jakości i
-                efektywności usług świadczonych przez Serwis internetowy lub wymienione
-                podmioty lub udziału w badaniach naukowych.
-            </li>
-            <li>
-                Administrator informuje, że dane osobowe przekazywane w ramach Usługi
-                Newslettera (dotyczy tylko osób, które zapiszą się do Newslettera,
-                podczas wypełniania formularza dotyczącego zapisu na newsletter),
-                przekazywane są do Litwy poprzez zapisanie ich w bazie zlokalizowanej na
-                serwerze znajdującym się w Litwie. Spowodowane jest to korzystaniem
-                przez Administratora z systemu mailingowego MailerLite, którego dostawcą
-                jest podmiot znajdujący się w Litwie. MailerLite gwarantuje poufność
-                danych zapisywanych w swoich bazach.
-            </li>
-            <li>
-                Administrator informuje Użytkowników, że powierza przetwarzanie danych
-                osobowych następującym podmiotom:
-                <ol type="a" className={classes.list}>
-                    <li>
-                        Google LLC – w celu korzystania z poczty Gmail oraz Google
-                        Analytics,
-                    </li>
-                    <li>
-                        Facebook Inc. – w celu prowadzenia fanpage’a o nazwie Patrycja
-                        Marszalec – Zdrowy Sukces odpowiedzi na zapytania klientów wysłane
-                        poprzez Messenger lub w wiadomości na fanpage, a także w
-                        wiadomościach prywatnych, w celu prowadzenia interakcji z osobami
-                        korzystającymi z fanpage’a,
-                    </li>
-                    <li>
-                        zleceniobiorcom lub podwykonawcom zaangażowanym do obsługi
-                        technicznej czy administracyjnej,
-                    </li>
-                    <li>
-                        księgowej – w celu korzystania z usług księgowych i przetwarzania
-                        danych klientów i pracowników widocznych na fakturach,
-                    </li>
-                    <li>
-                        UAB “MailerLite”, Paupio str. 46, Wilno, Republika Litwy – w celu
-                        wysyłki newslettera i korzystania z systemu mailingowego MailerLite,
-                        jeżeli Użytkownik zapisze się do newslettera.
-                    </li>
-                </ol>
-            </li>
+        Aktywność Użytkownika w Serwisie, w tym jego dane osobowe, są rejestrowane w logach
+        systemowych (specjalnym programie komputerowym służącym do przechowywania
+        chronologicznego zapisu zawierającego informację o zdarzeniach i działaniach dotyczących
+        systemu informatycznego służącego do świadczenia usług przez Administratora). Zebrane w
+        logach informacje przetwarzane są przede wszystkim w celach związanych ze świadczeniem
+        usług. Administrator przetwarza je również w celach technicznych, administracyjnych, na
+        potrzeby zapewnienia bezpieczeństwa systemu informatycznego oraz zarządzania tym
+        systemem, a także w celach analitycznych i statystycznych – w tym zakresie podstawą
+        prawną przetwarzania jest prawnie uzasadniony interes Administratora (art. 6 ust. 1 lit. f
+        RODO).
+        <h4 className={classes.contrast}>4. Newsletter.</h4>
+        Administrator przetwarza dane osobowe Użytkowników w celu realizowania działań
+        marketingowych, które mogą polegać na przesyłaniu Użytkownikowi treści marketingowych
+        odpowiadających jego zainteresowaniom (newsletter);
+        <br />
+        <br />
+        W tym celu po uprzedniej zgodzie wyrażonej przez użytkownika dane osobowe Użytkownika
+        podane w Serwisie takie jak Imię, Nazwisko i adres e-mail zostaną przekazane do partnera
+        Administratora w celu przesłania wiadomości mailowej zawierającej treści interesujące
+        Użytkownika.
+        <br />
+        <br />
+        Administrator nie podejmuje decyzji automatycznych w stosunku do Użytkownika oraz dane
+        osobowe Użytkownika nie podlegają profilowaniu.
+        <h4 className={classes.contrast}>5. Pliki cookies.</h4>
+        Serwis Administratora używa plików „cookies”. Brak zmiany ustawień przeglądarki po
+        stronie Czytelnika jest równoznaczny z wyrażeniem zgody na ich użycie. Są to krótkie
+        informacje tekstowe, zapisywane na komputerze, telefonie, tablecie, czy też innym
+        urządzeniu użytkownika. Mogą być one odczytywane przez Administratora, a także przez
+        systemy należące do innych podmiotów, z których usług korzysta (takich jak Google).
+        Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas
+        przechowywania ich na urządzeniu końcowym oraz unikalny numer. Więcej informacji na
+        temat plików cookies można uzyskać na stronie <a href="www.allaboutcookies.org">www.allaboutcookies.org</a>
+        <br />
+        <br />
+        Pliki cookies stosowane w serwisie nie przechowują danych osobowych ani innych
+        informacji zebranych od Czytelnika. Serwis wykorzystuje cookie do zidentyfikowania sesji
+        przeglądarki, co umożliwia korzystanie z funkcji serwisu. Korzystanie z technik „cookies”
+        nie pozwala na pobieranie jakichkolwiek danych osobowych i adresowych Czytelnika ani
+        żadnych informacji poufnych z jego komputera.
+        <br />
+        <br />
+        Cookies stosowane są do następujących celów: zachowanie bezpieczeństwa usług i
+        zapobiegania oszustwom, ułatwienia wydajności strony, rejestracja wizyt do celów
+        marketingowych i statystycznych, korzystanie z funkcji społecznościowych, wspieranie
+        personalizacji stron internetowych (np. zapisywania ustawień języka). Pliki cookies mogą
+        być również wykorzystywane i zamieszczane przez współpracujących z Administratorem
+        partnerów – podlegają wówczas politykom cookie lub politykom prywatności
+        zamieszczających je podmiotów.
+        <br />
+        <br />
+        Administrator zastrzega sobie możliwość korzystania w celu marketingu z narzędzia Google
+        Tag Manager. Wiąże się to z wykorzystywaniem cookies firmy Google, na przykład kodów
+        Google Ads.
+        <br />
+        <br />
+        Zakres oraz cel gromadzenia danych, oraz droga kontaktu i realizacji praw czy dokonania
+        ustawień zapewniających ochronę prywatności zostały opisane w polityce prywatności
+        poszczególnych usługodawców.
+        <br />
+        <br />
+        Zwyczajowo przeglądarka internetowa domyślnie dopuszcza wykorzystywanie cookiesw
+        urządzeniu. Administrator informuje, że można zmienić ustawienia w przeglądarce
+        internetowej — całkowicie blokować automatyczną obsługę plików cookies lub żądać
+        powiadomienia o każdorazowym zamieszczeniu cookies w urządzeniu.
+        <br />
+        <br />
+        W przypadku stosowania Google Chrome, instrukcja znajduje się tutaj – <a href="https://support.google.com/chrome/answer/95647?hl=en">https://support.google.com/chrome/answer/95647?hl=en</a>
+        <br />
+        <br />
+        W przypadku stosowania Mozilla Firefox, instrukcja znajduje się tutaj –
+        <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer">https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer</a>
+        <br />
+        <br />
+        W przypadku stosowania Safari, instrukcja znajduje się tutaj –<a href="https://support.apple.com/kb/ph21411?locale=pl_PL">
+            https://support.apple.com/kb/ph21411?locale=pl_PL</a>
+        <br />
+        <br />
+        W przypadku stosowania Microsoft Edge, instrukcja znajduje się tutaj –<a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/debugger/cookies">
+            https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/debugger/cookies</a>
+        <br />
+        <br />
+        W przypadku stosowania Internet Explorer, Administrator sugeruje zmianę narzędzia na
+        któreś z powyższych, a ponadto instrukcja znajduje się tutaj –<a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-
+        cookies">
+            https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-
+            cookies</a>
+        <br />
+        <br />
+        Administrator czuje się w obowiązku uprzedzić, że wyłączenie lub ograniczenie obsługi
+        plików cookies może spowodować trudności w korzystaniu ze strony internetoweji
+        ograniczenie jej funkcjonalności.
+        <h4 className={classes.contrast}>6. Przetwarzanie danych Użytkownika.</h4>
+        W ramach EOG:
+        <br />
+        <br />
+        W ramach Serwisu, dane Użytkownika są przetwarzane przez podmioty współpracujące z
+        Administratorem, które zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE)
+        2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z
+        przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz
+        uchylenia dyrektywy 95/46/WE zobowiązane są do przestrzegania analogicznych do
+        zawartych w Polityce wysokich standardów prywatności.
+        <br />
+        <br />
+        Poza EOG:
+        <br />
+        <br />
+        W związku z tym, że niektóre podmioty współpracujące z Administratorem mają siedziby
+        poza Unią Europejską, a zatem w świetle przepisów RODO są traktowane jako tzw. państwa
+        trzecie. Administrator zapewnia, że podmioty zobowiązały się do zapewnienia odpowiedniej
+        ochrony danych osobowych.
+        <br />
+        <br />
+        Dla Google Inc. Zbierane dane uniemożliwiają identyfikację konkretnej osoby, a więcej
+        informacji o standardach prywatności narzędzia dostępne jest pod linkiem <a href="www.google.com/intl/pl/policies/privacy/partners/">www.google.com/intl/pl/policies/privacy/partners/</a>. Ponadto korzystając z poniższego linku:
+        <a href="https://tools.google.com/dlpage/gaoptout">https://tools.google.com/dlpage/gaoptout</a> istnieje możliwość wyłączenia aktywności
+        mierzonej przez Google Analytics.
+        <br />
+        <br />
+        Dla Facebook Inc. –Zbierane dane co do zasady uniemożliwiają identyfikację konkretnej
+        osoby, a więcej informacji o standardach prywatności narzędzia dostępne jest pod linkiem
+        <a href="https://developers.facebook.com/docs/privacy/">https://developers.facebook.com/docs/privacy/</a>
+        <br />
+        <br />
+        Google LLC – w celu korzystania z poczty Gmail oraz Google Analytics
+        <br />
+        <br />
+        UAB “MailerLite”, Paupio str. 46, Wilno, Republika Litwy – w celu wysyłki newslettera i
+        korzystania z systemu mailingowego MailerLite, jeżeli Użytkownik zapisze się do
+        newslettera
+        <br />
+        <br />
+        Księgowej – w celu korzystania z usług księgowych i przetwarzania danych klientów
+        widocznych na fakturach
+        <br />
+        <br />
+        Tym samym powyższe firmy gwarantują przestrzeganie standardów w zakresie ochrony
+        danych osobowych, a korzystanie przez Administratora
+        z ich technologii przy przetwarzaniu danych osobowych jest zgodne z prawem.
+        <h4 className={classes.contrast}>7. Okres przetwarzania danych osobowych.</h4>
+        Okres przetwarzania danych przez Administratora zależy od rodzaju świadczonej usługi i
+        celu przetwarzania. Co do zasady dane przetwarzane są przez czas świadczenia usługi lub
+        realizowania zamówienia, do czasu wycofania wyrażonej zgody lub zgłoszenia skutecznego
+        sprzeciwu względem przetwarzania danych w przypadkach, gdy podstawą prawną
+        przetwarzania danych jest uzasadniony interes Administratora.
+        <br />
+        <br />
+        Okres przetwarzania danych może być przedłużony w przypadku, gdy przetwarzanie jest
+        niezbędne do ustalenia i dochodzenia ewentualnych roszczeń lub obrony przed nimi, a po
+        tym czasie jedynie w przypadku i w zakresie, w jakim będą wymagać tego przepisy prawa.
+        Po upływie okresu przetwarzania dane są nieodwracalnie usuwane lub anonimizowane.
+        <h4 className={classes.contrast}>8. Uprawnienia użytkownika.</h4>
+        Użytkownikowi przysługuje prawo:
+        <ol type="a">
+            <li>dostępu do treści danych oraz żądania ich sprostowania,</li>
+            <li>usunięcia danych,</li>
+            <li>ograniczenia przetwarzania,</li>
+            <li>prawo do przenoszenia danych,</li>
+            <li>prawo wniesienia sprzeciwu względem przetwarzania danych,</li>
+            <li>prawo wniesienia skargi do organu nadzorczego- Prezesa Urzędu Ochrony Danych
+                Osobowych ul. Stawki 2, 00-193 Warszawa</li>
         </ol>
-        <h4 className={classes.contrast}>§ 3</h4>
-        <h4 className={classes.contrast}>Polityka cookies</h4>
-        <ol className={classes.list}>
-            <li>
-                Administrator zbiera w sposób automatyczny informacje zawarte w plikach
-                cookies w celu gromadzenia danych związanych z korzystaniem ze Serwisu
-                internetowego przez Użytkownika. Pliki cookies to mały fragment tekstu,
-                który serwis internetowy wysyła do przeglądarki Użytkownika i który
-                przeglądarka wysyła z powrotem przy następnych wejściach na witrynę.
-                Używane są głównie do utrzymywania sesji np. poprzez wygenerowanie i
-                odesłanie tymczasowego identyfikatora po logowaniu.
-            </li>
-            <li>
-                Administrator wykorzystuje pliki cookies „sesyjne” przechowywane na
-                urządzeniu końcowym Użytkownika do czasu jego wylogowania, wyłączenia
-                strony internetowej lub wyłączenia przeglądarki internetowej oraz pliki
-                cookies „stałe” przechowywane na urządzeniu końcowym Użytkownika przez
-                czas określony w parametrach plików cookies lub do czasu ich usunięcia
-                przez Użytkownika.
-            </li>
-            <li>
-                Administrator w ramach Serwisu internetowego stosuje następujące rodzaje
-                plików cookies:
-                <ol type="a" className={classes.list}>
-                    <li>
-                        „niezbędne” pliki cookies, umożliwiające korzystanie z usług
-                        dostępnych w ramach Serwisu internetowego,
-                    </li>
-                    <li>pliki cookies służące do zapewnienia bezpieczeństwa,</li>
-                    <li>
-                        „wydajnościowe” pliki cookies, wykorzystywane do pozyskiwania
-                        informacji o sposobie korzystania ze strony internetowej Serwisu
-                        internetowego przez Użytkowników,
-                    </li>
-                    <li>
-                        „reklamowe” pliki cookies, umożliwiające dostarczanie Użytkownikom
-                        treści reklamowych bardziej dostosowanych do ich zainteresowań,
-                    </li>
-                    <li>
-                        „funkcjonalne” pliki cookies, umożliwiające „zapamiętanie” wybranych
-                        przez Użytkownika ustawień i dostosowanie Serwisu internetowego do
-                        Użytkownika.
-                    </li>
-                </ol>
-            </li>
-            <li>
-                Administrator usługi wykorzystuje cookies zewnętrzne w następujących
-                celach:
-                <ol type="a" className={classes.list}>
-                    <li>
-                        zbierania ogólnych i anonimowych danych statycznych za pośrednictwem
-                        narzędzi analitycznych: Google Analytics (administratorem cookies
-                        jest Google LLC z siedzibą w Stanach Zjednoczonych).
-                    </li>
-                </ol>
-            </li>
-            <li>
-                Google LLC jest podmiotem z państwa trzeciego – Stanów Zjednoczonych
-                oraz przystąpił do Privacy Shield w celu zapewnienia odpowiedniego
-                poziomu ochrony danych osobowych wymaganego przez RODO. Komisja
-                Europejska potwierdziła odpowiedni poziom ochrony danych w przypadku
-                przedsiębiorstw, które przystąpiły do Privacy Shield.
-            </li>
-            <li>
-                Pliki cookies dostosowują i optymalizują Serwis internetowy i jego
-                ofertę dla potrzeb Użytkowników poprzez takie działania jak tworzenie
-                statystyk odsłon Serwisu internetowego oraz zapewnienie bezpieczeństwa
-                jego użytkownikom.
-            </li>
-            <li>
-                Pliki cookies niezbędne są również do utrzymania sesji Użytkownika po
-                opuszczeniu przez niego Serwisu internetowego.
-            </li>
-            <li>
-                Użytkownik w każdej chwili za pomocą swojej przeglądarki internetowej
-                może zmienić ustawienia dotyczące plików cookies, w tym może zablokować
-                możliwość gromadzenia plików cookies.
-            </li>
-            <li>
-                Zablokowanie możliwości gromadzenia plików cookies czy wprowadzenie
-                innych zmian w ustawieniach dotyczących plików cookies na urządzeniu
-                Użytkownika może utrudnić lub uniemożliwić korzystanie z usług i
-                narzędzi Serwisu internetowego.
-            </li>
-            <li>
-                Użytkownik, który nie chce wykorzystywania plików cookies w opisanych
-                powyżej celach w każdej chwili może usunąć je ręcznie. Takie informacje
-                znajdują się w ustawieniach przeglądarki, z której aktualnie Użytkownik
-                korzysta.
-            </li>
-            <li>
-                Administrator może korzystać w Serwisie internetowym z profilowania do
-                celów marketingu bezpośredniego, ale decyzje podejmowane na podstawie
-                takiego profilowania przez Administratora nie dotyczą zawarcia lub
-                odmowy zawarcia Umowy o świadczenie usług, czy też możliwości
-                korzystania z Usług elektronicznych. Efektem korzystania z profilowania
-                może być np. przyznanie danej osobie rabatu, przesłanie kodu rabatowego,
-                przesłanie propozycji wykupienia usługi, które mogą odpowiadać np.
-                zainteresowaniom danej osoby. Ostatecznie to jednak osoba, której dane
-                dotyczą podejmuje swobodnie decyzję, czy będzie chciała skorzystać np. z
-                otrzymanego rabatu i zawrzeć umowę z Usługodawcą
-            </li>
-            <li>
-                Powyższe fragmenty polityki Cookies chronione są prawami autorskimi,
-                które przysługują IAB Polska i zostały zaczerpnięte ze strony
-                <a className={classes.contrast} href="http://wszystkoociasteczkach.pl">
-                    {" "}
-                    http://wszystkoociasteczkach.pl
-                </a>
-            </li>
-        </ol>
-        <h4 className={classes.contrast}>§ 4</h4>
-        <h4 className={classes.contrast}>
-            Prawa i obowiązki Administratora i Użytkowników
-        </h4>
-        <ol className={classes.list}>
-            <li>
-                Administrator nie powierza przetwarzania danych i nie udostępnia
-                zebranych danych osobowych podmiotom niepowiązanym bez zgody
-                zainteresowanych, chyba, że zachodzą następujące okoliczności:
-                <ol type="a" className={classes.list}>
-                    <li>
-                        Administrator może korzystać ze wsparcia podmiotów zewnętrznych w
-                        celu świadczenia udostępnianych przez siebie usług, jednak podmioty
-                        te nie są upoważnione do niezależnego wykorzystywania danych
-                        osobowych przetwarzanych w imieniu Administratora, a wszelkie ich
-                        działania podlegają przepisom Polityki Prywatności Strony,
-                    </li>
-                    <li>
-                        Administrator zachowuje prawo do udostępniania danych organom
-                        publicznym w prowadzeniu postępowań o możliwe naruszenia prawa lub w
-                        zwalczaniu ewentualnych naruszeń.
-                    </li>
-                </ol>
-            </li>
-            <li>
-                Administrator ma prawo, a także ustawowy obowiązek do przekazania
-                wybranych bądź wszystkich informacji dotyczących Użytkowników Strony
-                organom władzy publicznej bądź podmiotom trzecim, które zgłoszą takie
-                żądanie udzielenia informacji na podstawie obowiązujących przepisów
-                prawa polskiego.
-            </li>
-            <li>
-                Administrator zastrzega sobie, iż zakupioną usługę (dietę) prześle do
-                Użytkownika w ciągu 7 dni roboczych.
-            </li>
-            <li>
-                Uprawnienia Użytkownika na stronie internetowej www.zdrowy-sukces.pl
-                <ol type="a" className={classes.list}>
-                    <li>prawo dostępu do danych osobowych,</li>
-                    <li>
-                        prawo do żądania dostępu do swoich danych osobowych, ich
-                        sprostowania, usunięcia lub ograniczenia przetwarzania,
-                    </li>
-                    <li>prawo do wniesienia sprzeciwu wobec przetwarzania,</li>
-                    <li>prawo do przenoszenia danych,</li>
-                    <li>
-                        prawo do cofnięcia zgody na przetwarzanie danych osobowych w
-                        określonym celu, jeżeli uprzednio wyraziłeś taką zgodę,
-                    </li>
-                    <li>
-                        prawo do wniesienia skargi do organu nadzorczego w związku z
-                        przetwarzaniem przeze mnie danych osobowych.
-                    </li>
-                </ol>
-                Użytkownik może realizować powyższe uprawnienia zgodnie z zasadami
-                opisanymi w art. 16 – 21 RODO, kontaktując się ze mną pod adresem
-                patrycja.marszalec@gmail.com
-            </li>
-        </ol>
-        <h4 className={classes.contrast}>§ 5</h4>
-        <h4 className={classes.contrast}>Prawa autorskie</h4>
-        <ol className={classes.list}>
-            <li>
-                Użytkownik serwisu przyjmuje do wiadomości, że zakupione Usługi mają
-                charakter utworu i podlegają ochronie zawartej w ustawie o prawie
-                autorskim i prawach pokrewnych (Dz. U. 2006 r. Nr 90 poz. 631).
-            </li>
-            <li>
-                W ramach realizacji umowy Użytkownik serwisu nie nabywa majątkowych praw
-                autorskich do zakupionej Usługi. Użytkownik serwisu upoważniony jest
-                jedynie do wykorzystania Usługi we własnej diecie. W związku z powyższym
-                zakazane jest:
-                <ol type="a" className={classes.list}>
-                    <li>udostępniania i prezentowanie Usług osobom trzecim,</li>
-                    <li>publikowanie niezależnie od formy publikacji,</li>
-                    <li>kopiowanie, powielanie na potrzeby inne niż własny użytek.</li>
-                </ol>
-            </li>
-            <li>
-                Wszelkie utwory i Usługi dostępne w Serwisie, głównie zdjęcia, oraz
-                treści stanowią przedmiot praw autorskich przysługujących Usługodawcy
-                lub podmiotom trzecim i podlegają ochronie zgodnie z ustawą z dnia 4
-                lutego 1994 roku o prawie autorskim i prawach pokrewnych (Dz. U. z 1994
-                r., Nr 2, poz. 23 ze zm.). Korzystanie z tych utworów jest dopuszczalne
-                wyłącznie w takim zakresie, który nie wykracza poza użytek dozwolony na
-                gruncie obowiązującego prawa.
-            </li>
-        </ol>
-        <h4 className={classes.contrast}>§ 6</h4>
-        <h4 className={classes.contrast}>Zmiany Polityki Prywatności</h4>
-        <ol className={classes.list}>
-            <li>
-                Oferta Serwisu internetowego będzie w przyszłości ulegać rozszerzeniu.
-                Oznacza to, że Administrator będzie zobowiązany lub uprawniony do
-                wprowadzenia zmian w Polityce Prywatności.
-            </li>
-            <li>
-                Nowe wersje Polityki Prywatności będą się pojawiały na stronie
-                internetowej Serwisu internetowego wraz ze stosownym komunikatem.
-            </li>
-            <li>
-                Każda zmiana Polityki Prywatności będzie obowiązywała od dnia
-                powiadomienia o jej zmianie poprzez jej umieszczenie na stronie
-                internetowej Serwisu internetowego. Wszelkie zmiany będą odpowiednio
-                wyróżnione przez okres jednego miesiąca od dnia wprowadzenia zmian w
-                Polityce Prywatności.
-            </li>
-        </ol>
+        W zakresie, w jakim dane Użytkownika przetwarzane są na podstawie zgody, można ją
+        wycofać w dowolnym momencie, kontaktując się z Administratorem.
+        <br />
+        <br />
+        Użytkownik ma prawo zgłoszenia sprzeciwu względem przetwarzania danych dla celów
+        marketingowych, jeśli przetwarzanie odbywa się w związku z uzasadnionym interesem
+        Administratora, a także – z przyczyn związanych ze szczególną sytuacją Użytkownika –w
+        innych przypadkach, gdy postawą prawną przetwarzania danych jest uzasadniony interes
+        Administratora (np. w związku z realizacją celów analitycznych i statystycznych).
+        <h4 className={classes.contrast}>9. Odbiorcy danych.</h4>
+        W związku z realizacją usług dane osobowe będą ujawniane zewnętrznym podmiotom, w
+        tym w szczególności dostawcom odpowiedzialnym za obsługę systemów informatycznych,
+        agencje marketingowe (w zakresie usług marketingowych) oraz podmiotom powiązanym z
+        Administratorem.
+        <br />
+        <br />
+        W przypadku uzyskania zgody Użytkownika jego dane mogą zostać także udostępnione
+        innym podmiotom do ich własnych celów, w tym celów marketingowych.
+        <br />
+        <br />
+        Administrator zastrzega sobie prawo ujawnienia wybranych informacji dotyczących
+        Użytkownika właściwym organom bądź osobom trzecim, które zgłoszą żądanie udzielenia
+        takich informacji, opierając się na odpowiedniej podstawie prawnej oraz zgodnie z
+        przepisami obowiązującego prawa.
+        <h4 className={classes.contrast}>10. Kontakt.</h4>
+        Kontakt z Administratorem jest możliwy pod adresem e-mail
+        zdrowysukcesdietetyka@gmail.com
+        <h4 className={classes.contrast}>11. Zmiany Polityki Prywatności</h4>
+        Polityka jest na bieżąco weryfikowana i w razie potrzeby aktualizowana. Aktualna wersja
+        Polityki została przyjęta i obowiązuje od 06.01.2022r.
     </section>
 }

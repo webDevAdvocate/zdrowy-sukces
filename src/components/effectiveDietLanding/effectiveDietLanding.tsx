@@ -21,12 +21,57 @@ const mapImages = (imgs: string[]): PhotoProps[] => {
     });
 };
 
+const EBOOK_URLS = [
+    "https://1ct.eu/lnOr",
+    "https://1ct.eu/6mxW",
+    "https://1ct.eu/Y94q",
+    "https://1ct.eu/WRzr"
+]
+
+const PRICE_HTML = [
+    <h3 className={styles["no-margin"]}>59,00 - 79.00 zł <span className={styles.promo}>99.00 - 109.00 zł</span></h3>,
+    <h3>99.00 - 109.00 zł</h3>
+]
+
+const countdown = () => {
+    const countDownDate = new Date("Jan 21, 2022 18:00:00").getTime();
+
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if (distance < 0) {
+        return null;
+    }
+
+    return days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+}
 
 export const EffectiveDietLanding = () => {
     const [images, setImages] = useState<string[]>([]);
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
     const [variant, setVariant] = useState(1);
+    const [promoTime, setPromoTime] = useState(countdown());
+    const [price, setPrice] = useState(promoTime !== null ? PRICE_HTML[0] : PRICE_HTML[1]);
+
+    useEffect(() => {
+        const x = setInterval(() => {
+            const count = countdown();
+            setPromoTime(count);
+
+            setPrice(count !== null ? PRICE_HTML[0] : PRICE_HTML[1]);
+
+        }, 1000);
+
+        return () => clearInterval(x)
+    })
 
     useEffect(() => {
         if (images.length) {
@@ -83,7 +128,8 @@ export const EffectiveDietLanding = () => {
             </div>
             <div className={styles.info}>
                 <h2>E-book Skuteczna Dieta </h2>
-                <h3>99,00 zł</h3>
+                {price}
+                {promoTime && <h5>Wyższa cena za: {promoTime}</h5>}
                 Przed Tobą 4 wersje ebooka: Ebook 1600 kcal i 1800 kcal z dietą klasyczną, ebook 1600 kcal i
                 1800 kcal z dietą przeciwzapalną. Posiłki w każdej wersji możesz wymieniać pomiędzy sobą dowolnie.
                 <br />
@@ -142,7 +188,7 @@ export const EffectiveDietLanding = () => {
                             checked={variant === 4} />
                         <label htmlFor="4">Dieta Przeciwzapalna 1800 kcal</label>
                     </div>
-                    <button onClick={() => console.log(variant)}>Kup</button>
+                    <a className={styles.button} href={EBOOK_URLS[variant]} >Kup</a>
                 </div>
 
             </div>
