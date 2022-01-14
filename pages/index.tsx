@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Header />
       <Hello />
-      {/* <EffectiveDietSection /> */}
+      <EffectiveDietSection />
       <ContactSection />
       <Cooperation />
       <About />

@@ -29,8 +29,8 @@ const EBOOK_URLS = [
 ]
 
 const PRICE_HTML = [
-    <h3 className={styles["no-margin"]}>59,00 - 79.00 zł <span className={styles.promo}>99.00 - 109.00 zł</span></h3>,
-    <h3>99.00 - 109.00 zł</h3>
+    <h3 className={styles["no-margin"]}>59,00 - 79.00 zł <span className={styles.promo}>99.00 - 119.00 zł</span></h3>,
+    <h3>99.00 - 119.00 zł</h3>
 ]
 
 const countdown = () => {
@@ -188,7 +188,7 @@ export const EffectiveDietLanding = () => {
                             checked={variant === 4} />
                         <label htmlFor="4">Dieta Przeciwzapalna 1800 kcal</label>
                     </div>
-                    <a className={styles.button} href={EBOOK_URLS[variant]} >Kup</a>
+                    <a className={styles.button} href={EBOOK_URLS[variant - 1]} >Kup</a>
                 </div>
 
             </div>
