@@ -12,6 +12,7 @@ import { EffectiveDietSection } from '../src/components/effectiveDietSection/eff
 
 import styles from '../styles/Home.module.css'
 import { Cookies } from '../src/components/cookies/cookies'
+import { NewsletterFooter } from '../src/components/newsletterFooter/newsletterFooter'
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <Concerns />
       <Prices />
       <Certificates />
+      <NewsletterFooter />
       <Footer />
       <Cookies />
     </div>

@@ -2,8 +2,8 @@ import styles from './instagram.module.scss';
 import instagram from '../../assets/images/ig_ikona.png';
 import Image from 'next/image';
 
-import firstPostImg from '../../assets/instagram/sernik.jpeg';
-import secondPostImg from '../../assets/instagram/kanapka.jpeg';
+import firstPostImg from '../../assets/instagram/owsianka.jpg';
+import secondPostImg from '../../assets/instagram/bajgiel.jpg';
 
 interface Post {
     image: string,
@@ -16,13 +16,13 @@ export type Posts = Post[];
 const posts = [
     {
         image: firstPostImg.src,
-        title: 'Sernik Nowojorski',
-        url: 'https://www.instagram.com/p/CWu1NukMA96/'
+        title: 'Budyniowa owsianka marchewkowa',
+        url: 'https://www.instagram.com/p/Cb5aP0lsVbx/'
     },
     {
         image: secondPostImg.src,
-        title: 'Wypasiona Kanapka',
-        url: 'https://www.instagram.com/p/CVr3hiks7eQ/'
+        title: 'Bajgiel z burakiem i camembertem',
+        url: 'https://www.instagram.com/p/Cbh6xVhMH6E/'
     }
 
 

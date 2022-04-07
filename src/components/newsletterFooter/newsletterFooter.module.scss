@@ -1,0 +1,30 @@
+@import "../../../styles/globalVars.scss";
+
+.section {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: 50px;
+        flex-direction: row;
+
+        .left {
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+            margin: auto;
+        }
+    
+        .right {
+            display: flex;
+            width: 60%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

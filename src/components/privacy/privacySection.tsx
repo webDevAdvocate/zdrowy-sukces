@@ -11,7 +11,7 @@ export const PrivacySection = () => {
         <br />
         <h4 className={classes.contrast}>1. Definicje</h4>
         Administrator – Patrycja Marszalec, prowadzącą działalność gospodarczą wpisaną do CEIDG
-        pod nazwą Zdrowy Sukces Patrycja Marszalec
+        pod nazwą Zdrowy Sukces Patrycja Marszalec, Luchów Górny 60, 23-420 Tarnogród, NIP: 9182176228, REGON: 520895069
         <br />
         <br />
         RODO – Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27
