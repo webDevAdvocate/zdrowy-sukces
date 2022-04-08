@@ -40,7 +40,7 @@ export const Footer = () => {
             </div>
         </div> */}
         <div className={styles.privacy}>
-            <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
+            <Link href="/polityka-prywatnosci">Polityka prywatności</Link> | <Link href="/regulamin">Regulamin</Link>
         </div>
     </footer>
 }
