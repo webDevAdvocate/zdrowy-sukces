@@ -1,16 +1,16 @@
 import Link from 'next/link';
-import background from '../../assets/images/effective_diet_section_mobile.jpg';
+import background from '../../assets/images/ebooks.jpg';
 
 import styles from './effectiveDietSection.module.scss';
 
 export const EffectiveDietSection = () => {
 
     return <section className={styles.section}>
-        <Link href="/skuteczna-dieta">
+        <Link href="https://zdrowysukceskoszkk.v.1cart.eu/pl/offer">
             <img className={styles.image} alt="skuteczna dieta" width="100vw" height="auto" src={background.src}></img>
         </Link>
         <button className={styles.button}>
-            <Link href="/skuteczna-dieta">
+            <Link href="https://zdrowysukceskoszkk.v.1cart.eu/pl/offer">
                 Sprawdź
             </Link>
         </button>
