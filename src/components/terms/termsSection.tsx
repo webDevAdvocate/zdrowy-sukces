@@ -71,11 +71,10 @@ export const TermsSection = () => {
                     <li>
                         Online
                         <ol>
-                            <li>Klient kontaktuje się przez wiadomość e-mail z Dietetykiem.</li>
-                            <li>Kupujący wypełnia kwestionariusz zdrowotno- żywieniowy.</li>
-                            <li>Kupujący wpłaca całą kwotę na podany rachunek bankowy.</li>
-                            <li>W przypadku braku wpłaty całości kwoty w ciągu 7 dni rezerwacja terminu zostanie anulowana a zadatek zatrzymany przez dietetyka.</li>
-                            <li>Klient otrzymuje na podany adres mailowy wytyczne, plan żywieniowy. Ustalany jest termin konsultacji.</li>
+                            <li>Klient wykupuje konsultację lub współpracę dietetyczną.</li>
+                            <li>Kupujący wypełnia kwestionariusz zdrowotno-żywieniowy oraz wykonuje sugerowane badania diagnostyczne.</li>
+                            <li>Kupujący przesyła podane dokumenty na adres e-mail dietetyka zdrowysukcesdietetyka@gmail.com</li>
+                            <li>WKlient otrzymuje od dietetyka informację zwrotną dotyczącą dokładnego terminu konsultacji/współpracy dietetycznej</li>
                         </ol>
                     </li>
                 </ul>
@@ -92,9 +91,9 @@ export const TermsSection = () => {
         <h4>Dostawa i płatność</h4>
         <ol>
             <li>Dostępne metody płatności za zamówienie opisane są na stronach Sklepu oraz prezentowane są Klientowi na etapie składania zamówienia.</li>
-            <li>Płatności na konto bankowe nr: 69 1020 5385 0000 9802 0137 9551</li>
-            <li> W przypadku planu dietetycznego, zostanie on dostarczony po wypełnieniu "Kwestionariusza zdrowotno-żywieniowego", który wypełnia Klient.</li>
+            <li>W przypadku planu dietetycznego, zostanie on dostarczony po wypełnieniu "Kwestionariusza zdrowotno-żywieniowego", który wypełnia Klient oraz wykonania sugerowanych badań diagnostycznych, jeśli będzie to konieczne.</li>
             <li>Dieta zostanie wysyłana Klientowi do 7 dni roboczych od otrzymania wpłaty, od konsultacji lub od odesłania kwestionariusza żywieniowego (brany pod uwagę jest termin ostatniego spełnionego warunku).</li>
+            <li>Konsultacja zostanie przeprowadzona w ciągu 14 dni roboczych od wykupienia produktu w sklepie dietetyka.</li>
         </ol>
         <h4>§7</h4>
         <h4>Produkty elektroniczne</h4>

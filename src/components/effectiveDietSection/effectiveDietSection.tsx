@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import background from '../../assets/images/ebooks.jpg';
+import background from '../../assets/images/ebooki.png';
 
 import styles from './effectiveDietSection.module.scss';
 

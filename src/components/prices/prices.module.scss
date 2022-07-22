@@ -1,173 +1,194 @@
 @import "../../../styles/globalVars.scss";
 
 .prices {
-    background-color: $primaryPink;
-    display: flex;
+  background-color: $primaryPink;
+  display: flex;
+
+  .wrapper {
+    position: relative;
+  }
+
+  .fork {
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    right: 50px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem 0 0 2.5rem;
+  }
+
+  hr {
+    width: 75px;
+    background-color: white;
+    margin-left: 2.5rem;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    display: none;
+  }
+
+  .prices-box {
+    .box {
+      background-color: $grey;
+      width: 100%;
+      height: 520px;
+      margin: 25px 0;
+      padding: 5px;
+      color: $primaryPink;
+      position: relative;
+
+      .knowMore {
+        position: absolute;
+        bottom: 25px;
+        left: calc(50% - 75px);
+        right: calc(50% - 75px);
+        width: 180px;
+        line-height: 50px;
+        color: white;
+        background-color: #cb6b7f;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .title {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .price {
+        font-size: 2rem;
+        text-align: center;
+        font-family: noir-bold;
+      }
+
+      .savings {
+        font-size: 1rem;
+        text-align: center;
+        font-family: noir-regular;
+      }
+
+      hr {
+        background-color: $primaryPink;
+        width: 50px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .description {
+        margin: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+
+        .description-item-bullet {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .prices {
+    height: 1900px;
+    display: block;
 
     .wrapper {
-        position: relative;
-    }
-    
-    .fork {
+      .fork {
         position: absolute;
-        top: -50px;
-        width: 100px;
-        height: 100px;
-        right: 50px;
-    }
+        top: -75px;
+        width: 150px;
+        height: 150px;
+        right: 200px;
+      }
 
-    h1 {
-        font-size: 1.5rem;
-        color: white;
-        padding: 2rem 0 0 2.5rem;
-    }
+      h1 {
+        font-size: 2.5rem;
+        padding: 2rem 0 0 5rem;
+      }
 
-    hr {
-        width: 75px;
-        background-color: white;
-        margin-left: 2.5rem;
-    }
+      hr {
+        margin-left: 5rem;
+      }
 
-    .line1, .line2, .line3 {
-        display: none;
-    }
-
-    .prices-box {
-        position: static;
-
-        .box {
-            background-color: $grey;
-            width: 100%;
-            height: 500px;
-            margin: 25px 0;
-            padding: 5px;
-            color: $primaryPink;
-
-            .title {
-                font-size: 2rem;
-                text-align: center;
-            }
-
-            .price {
-                font-size: 2rem;
-                text-align: center;
-                font-family: noir-bold;
-            }
-
-            .savings {
-                font-size: 1rem;
-                text-align: center;
-                font-family: noir-regular;
-            }
-
-            hr {
-                background-color: $primaryPink;
-                width: 50px;
-                margin-top: 10px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .description {
-                margin: 0;
-                padding-top: 20px;
-                padding-right: 20px;
-
-                .description-item-bullet {
-                    margin-left: 20px;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) { 
-    .prices {
-        height: 1900px;
+      .line1,
+      .line2,
+      .line3 {
         display: block;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
 
-        .wrapper {
-            .fork {
-                position: absolute;
-                top: -75px;
-                width: 150px;
-                height: 150px;
-                right: 200px;
-            }
-    
-            h1 {
-                font-size: 2.5rem;
-                padding: 2rem 0 0 5rem;
-            }
-    
-            hr {
-                margin-left: 5rem;
-            }
-    
-            .line1, .line2, .line3 {
-                display: block;
-                position: absolute;
-                width: 100%;
-                z-index: -1;
-            }
-    
-    
-            .line1 {
-                top:0;
-                background-color: $primaryPink;
-                height: 300px;
-            }
-    
-            .line2 {
-                top: 300px;
-                background-color: white;
-                height: 650px;
-                z-index: 0;
-            }
-        
-            .line3 {
-                top: 950px;
-                background-color: $primaryPink;
-                height: 800px;
-            }
-    
-            .prices-box {
-                position: absolute;
-                top: 150px;
-                grid-template-columns: 350px 350px;
-                width: 100%;
-                display: grid;
-                row-gap: 50px;
-                column-gap: 50px;
-                justify-content: center;
-            }
-        }
+      .line1 {
+        top: 0;
+        background-color: $primaryPink;
+        height: 300px;
+      }
 
+      .line2 {
+        top: 300px;
+        background-color: white;
+        height: 650px;
+        z-index: 0;
+      }
+
+      .line3 {
+        top: 950px;
+        background-color: $primaryPink;
+        height: 800px;
+      }
+
+      .prices-box {
+        position: absolute;
+        top: 150px;
+        grid-template-columns: 350px 350px;
+        width: 100%;
+        display: grid;
+        row-gap: 50px;
+        column-gap: 50px;
+        justify-content: center;
+      }
     }
+  }
 }
 
-@media (min-width: 1280px) { 
-    .prices {
-        height: 1350px;
+@media (min-width: 1280px) {
+  .prices {
+    height: 750px;
 
-        .wrapper {
-            .line1 {
-                height: 300px;
-            }
-        
-            .line2 {
-                top: 300px;
-                height: 350px;
-            }
-        
-            .line3 {
-                top: 650px;
-                height: 700px;
-            }
-    
-            .prices-box {
-                grid-template-columns: 350px 350px 350px;
-            }
+    .wrapper {
+      .line1 {
+        height: 300px;
+      }
+
+      .line2 {
+        top: 300px;
+        height: 350px;
+      }
+
+      .line3 {
+        top: 650px;
+        height: 700px;
+      }
+
+      .prices-box {
+        grid-template-columns: 350px 350px 350px;
+
+        .knowMore {
+          width: 150px;
+          line-height: 30px;
         }
+      }
     }
+  }
 }

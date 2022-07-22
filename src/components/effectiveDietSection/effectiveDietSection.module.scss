@@ -3,6 +3,9 @@
 .section {
     cursor: pointer;
     position: relative;
+    min-height: 350px;
+    background-color: #f7f7f7;
+    padding: 0 0 50px 0;
 
     .image {
         width: 100%;

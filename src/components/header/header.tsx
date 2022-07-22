@@ -111,7 +111,7 @@ export const Header = ({ pink }: { pink?: boolean }) => {
             <li onClick={onMenuItemClick} className={classes.menuItem}>
               <div className={classes.link}>
                 <Link href="https://zdrowysukceskoszkk.v.1cart.eu/pl/offer">
-                  ENDO e-book
+                  Sklep
                 </Link>
               </div>
             </li>
