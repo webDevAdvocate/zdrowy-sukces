@@ -21,7 +21,7 @@ export const Cooperation = () => {
             <ul className={styles.list}>
                 <li className={styles.item}>Wykup konsultację lub współpracę dietetyczną</li>
                 <li className={styles.item}>Wypełnij przesłany kwestionariusz zdrowotno-żywieniowy (dostaniesz plik po opłaceniu współpracy)</li>
-                <li className={styles.item}>Wykonaj potrzebna badania (dostaniesz plik po opłaceniu współpracy)</li>
+                <li className={styles.item}>Wykonaj potrzebne badania (dostaniesz plik po opłaceniu współpracy)</li>
                 <li className={styles.item}>Prześlij kwestionariusz i badania na adres e-mail zdrowysukcesdietetyka@gmail.com</li>
                 <li className={styles.item}>Czekaj cierpliwie na jadłospis lub konsultację</li>
             </ul>
